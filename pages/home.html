@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:100%">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <title>
+        数字管廊综合管理系统
+    </title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/menucss.css" rel="stylesheet" />
+    <style>
+        html {
+            overflow-x: hidden;
+            overflow-y: hidden
+        }
+    </style>
+</head>
+
+<body style=" margin: auto; min-width: 1024px; min-height: 613px; ">
+    <div class="" style="position: relative;margin-top:10px; width: 100%; height: 60px;vertical-align: middle;">
+        <div class="nav" id="nav" style="width: 100%;">
+            <div style="vertical-align: middle;padding-left:30px; line-height: 50px;float:left">
+                <img src="../images/LOGO.png" style="height: 50px" alt="">
+            </div>
+            <div class="TitleMenu">
+                <div>
+                    <div class="nav-right" style=" flex-grow: 1; line-height: 60px; color: white; font-size: 14px; float: right;">
+                        <!-- 2登录-->
+                        <div id="Wel" class="showXinxiBox wid-100" style="height:60px;position: relative;float:left;">
+                            <div class="huanYinDiv" style="overflow: hidden;white-space:nowrap;text-overflow: ellipsis;line-height: 60px;width:100px">
+
+                                <img class="middle" src="../images/head.png" alt="">
+
+                                <span class="middle fts-14" id="userName"></span>
+                                <!--小三角-->
+                                <span class="arrow-down"></span>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="xinXiBox">
+                                <div class="xinXiListDiv" id="fullscreen">
+                                    <img src="../images/fscroll.png" alt="Alternate Text" />
+                                    <a style="font-size:14px">全屏显示</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="applition TitlMsg" style="width: 90px; position: relative; height: 60px; overflow: hidden; float: left" id="MessageList">
+                            <img class="middle" style="width:18px;height:22px;" src="../images/msg.png" alt="应用中心">
+                            <span style="font-size: 14px;margin-left:5px; letter-spacing: 2px;">消&nbsp;&nbsp;息</span>
+                            <span class="badge" style="background: red; position: absolute;left:17px; top:11px;letter-spacing: 0px;">0</span>
+                        </div>
+                        <!--退出按钮-->
+                        <div class="TitleExit" style=" width: 72px; overflow: hidden; height: 60px; font-size: 14px; float: left;">
+                            <div class="outBtn" onclick="custom_close()">
+                                <img class="middle" src="../images/off.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-main menu-main-div" style="width:70%; position: absolute;margin:0 auto;">
+        <div class="menu-row">
+            <div class="menu-row-col maring-right-10 list-item item-auto" style="background-color: #68b6ff" onclick="OpenWindow(this)">
+                <!-- 管廊管理系统 -->
+                <a href="./pipeGallery.html"><img src="../images/guanlang.png"></a>
+                <div class="menu-row-title" id="PIPE">管廊管理系统</div>
+            </div>
+            <div class="menu-row-col maring-right-10 list-item item-auto" style="background-color: #4379f4" onclick="OpenWindow(this)">
+                 <!-- 巡检管理系统 -->
+                <a href="./InspectionManagement.html"><img src="../images/xunjian.png"></a>
+                <div class="menu-row-title" id="Work">巡检管理系统</div>
+            </div>
+            <div class="menu-row-col list-item item-auto" style="background-color: #f6a37e" onclick="OpenWindow(this)">
+                <img src="../images/guanwang.png">
+                <div class="menu-row-title" id="DXPIPE">地下管网系统</div>
+            </div>
+        </div>
+        <div class="menu-row">
+            <div class="menu-row-col2 small-long">
+                <div class="menu-row-col maring-right-10 list-item" style="background-color: #8277ff" onclick="OpenWindow(this)">
+                    <img src="../images/shuju.png">
+                    <div class="menu-row-title" id="GAS">SCADA系统</div>
+                </div>
+                <div class="menu-row-col maring-right-10 list-item" style="background-color: #ef767f" onclick="OpenWindow(this)">
+                    <img src="../images/yingji.png">
+                    <div class="menu-row-title" id="EMG">应急管理系统</div>
+                </div>
+                <div class="menu-row-col maring-right-10 list-item" style="background-color: #6896ff" onclick="OpenWindow(this)">
+                    <img src="../images/daping.png">
+                    <div class="menu-row-title" id="PortalTwo">展示大屏</div>
+                </div>
+                <div class="menu-row-col maring-right-10 list-item" style="background-color: #6896ff" onclick="OpenWindow3()">
+                    <img src="../images/daping.png">
+                    <div class="menu-row-title" id="Main">综合管理</div>
+                </div>
+            </div>
+            <div class="menu-row-col2 small " style="flex-wrap: wrap;">
+                <div class="square maring-right-10 maring-bottom-10 list-item" style="background-color: rgba(104,182,255,0.8); " onclick="OpenWindow2(this)">
+                    <img src="../images/yonghu.png" id="PMS">
+                </div>
+                <div class="square  maring-bottom-10 list-item" style="background-color: rgba(130,119,255,0.8); " onclick="OpenWindow2(this)">
+                    <img src="../images/wenjian.png" id="OSS">
+                </div>
+                <div class="square maring-right-10 list-item" style="background-color: rgba(114,207,180,0.8); " onclick="OpenWindow2(this)">
+                    <img src="../images/xiaoxi.png" id="MSC">
+                </div>
+                <div class="square list-item" style="background-color: rgba(255,255,255,0.4); " onclick="OpenWindow2(this)">
+                    <img src="../images/rizhi.png" id="J_Log">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="size">为了保证你使用的兼容性，建议使用IE浏览器10以上版本</div>
+    <div class="code-bottom" style="bottom:30px;right:40px;">
+        <img src="../images/code-bottom.png" alt="Alternate Text" style="width:80px;height:80px" />
+        <span class="webApp-adress">移动应用端下载</span>
+    </div>
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

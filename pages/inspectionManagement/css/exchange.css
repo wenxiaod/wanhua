@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: '微软雅黑';
+}
+
+.out-restrain {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: #000;
+    opacity: 0.3;
+    z-index: 1000;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(opacity=50)';
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+.restrain-inner {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    z-index: 1001;
+}
+
+.clearfix1 {
+    clear: both;
+}
+
+.inner-img {
+    width: 100%;
+}
+
+.restrain-content {
+    width: 45%;
+    position: relative;
+    zoom: 1;
+    margin: 0 auto;
+    min-width: 630px;
+}
+
+.restrain-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 59%;
+    margin-top: 41%;
+}
+
+.erweima {
+    float: right;
+    margin-right: 4%;
+    text-align: center;
+}
+
+.erweima-text {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.erweimaImage {
+    width: 82%;
+}
+
+.user-title {
+    margin: 8% 0 10px 5%;
+    color: #199fff;
+    font-size: 26px;
+}
+
+.user-text {
+    font-size: 16px;
+    margin-left: 5%;
+}
+
+.take-easy {
+    float: right;
+    font-size: 26px; 
+}
+
+.new-version {
+    margin: 1.4% 0 21px 9%;
+    color: #9b9b9b;
+}
+
+.all-buttons {
+    text-align: center;
+}
+
+.change-button1 {
+    background: #fc5832;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    padding: 12.5px 0;
+    width: 374px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.another-button {
+    cursor: pointer;
+    background: #f0f0f0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    padding: 12.5px 0;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.bottom-address {
+    position: absolute;
+    bottom: 0.5%;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width:1500px) {
+    .out-restrain {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: #000;
+        opacity: 0.3;
+        z-index: 1000;
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(opacity=50)';
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    }
+
+    .restrain-inner {
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        z-index: 1001;
+    }
+
+    .clearfix1 {
+        clear: both;
+    }
+
+    .inner-img {
+        width: 100%;
+    }
+
+    .restrain-content {
+        width: 45%;
+        position: relative;
+        zoom: 1;
+        margin: 2% auto;
+        min-width: 800px;
+    }
+
+    .restrain-text {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 59%;
+        margin-top: 41%;
+    }
+
+    .erweima {
+        float: right;
+        margin-right: 4%;
+    }
+
+    .erweima-text {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .erweimaImage {
+        width: 100%;
+    }
+
+    .user-title {
+        margin: 12% 0 25px 9%;
+        color: #199fff;
+        font-size: 26px;
+    }
+
+    .user-text {
+        font-size: 19px;
+        margin-left: 9%;
+    }
+
+    .take-easy {
+        float: right;
+        font-size: 26px;
+    }
+
+    .new-version {
+        margin: 1.4% 0 50px 9%;
+        color: #9b9b9b;
+    }
+
+    .all-buttons {
+        text-align: center;
+    }
+
+    .change-button {
+        background: #fc5832;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 32px;
+        padding: 12.5px 0;
+        width: 374px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .another-button {
+        cursor: pointer;
+        background: #f0f0f0;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 32px;
+        padding: 12.5px 0;
+        width: 120px;
+        color: #fff;
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .bottom-address {
+        position: absolute;
+        bottom: 2%;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+}
+.btnZhanBu{
+      float: right;
+    margin-top: -19%;
+    margin-right: 15px;
+    cursor: pointer;
+}

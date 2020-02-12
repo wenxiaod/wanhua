@@ -1,0 +1,376 @@
+@charset "utf-8";
+body {
+    background: url(../images/wh-Background.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #CCCCCC;
+}
+
+@-webkit-keyframes animate-cloud {
+    from {
+        background-position: 600px 100%;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+
+@-moz-keyframes animate-cloud {
+    from {
+        background-position: 600px 100%;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+
+@-ms-keyframes animate-cloud {
+    from {
+        background-position: 600px 100%;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+
+@-o-keyframes animate-cloud {
+    from {
+        background-position: 600px 100%;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    /*background: transparent;*/
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #563D64;
+}
+
+small {
+    font-size: 10px;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.clearfix:after,
+form:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.container {
+    margin: 300px auto 0 auto;
+    position: relative;
+    width: 1000px;
+}
+
+form {
+    margin: 0 20px;
+    position: relative;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /*background: #fff;*/
+    background: #fff url(../images/8bcLQqF.png) no-repeat;
+    border: 1px solid #f9f9f9;
+    color: #777;
+    font: 14px Helvetica, Arial, sans-serif;
+    margin: 0 0 0px;
+    padding: 12px 0 12px 50px;
+    width: 90%;
+    /*border: 0px;*/
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    -webkit-box-shadow: 0 0 3px #3b93ec inset;
+    -moz-box-shadow: 0 0 3px #3b93ec inset;
+    -ms-box-shadow: 0 0 3px #3b93ec inset;
+    -o-box-shadow: 0 0 3px #3b93ec inset;
+    box-shadow: 0 0 3px #3b93ec inset;
+    background-color: #fff;
+    /*border-color:#ed1c24;*/
+    border: 1px solid #3b93ec;
+    /*border-color:#3b93ec;*/
+    outline: none;
+}
+
+#txtUserName {
+    background-position: 10px 10px !important;
+}
+
+#txtValidateCode {
+    background-position: 10px -104px !important;
+}
+
+#txtPassword {
+    background-position: 10px -54px !important;
+}
+
+form div a {
+    color: #ffffff;
+    /*float: right;*/
+    font-size: 12px;
+    text-decoration: none;
+    font-family: MicrosoftYaHei;
+}
+
+form div a:hover {
+    color: #3b93ec;
+    /*float: right;*/
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.button {
+    background: rgb(247, 249, 250);
+    background: -moz-linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(240, 240, 240, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(240, 240, 240, 1) 100%);
+    background: -o-linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(240, 240, 240, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(240, 240, 240, 1) 100%);
+    background: linear-gradient(top, rgba(247, 249, 250, 1) 0%, rgba(240, 240, 240, 1) 100%);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid #CFD5D9;
+    padding: 15px 0;
+}
+
+.login {
+    height: 20px;
+    font-size: 13px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    color: white;
+    margin-left: 60px;
+    position: relative
+}
+
+.login>samp {
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    letter-spacing: 1px
+}
+
+#chkAuto {
+    width: 17px;
+    height: 17px
+}
+
+#chkAuto:active {
+    background: #128aff
+}
+
+.main-div {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}
+
+.user-list {
+    width: 1000px;
+    margin-top: 10%;
+    margin-top: 120px;
+    height: 42px;
+    position: relative
+}
+
+.uname {
+    float: left;
+    margin-left: 60px;
+    width: 244px;
+}
+
+.upwd {
+    float: left;
+    height: 42px;
+    margin-left: 60px;
+    width: 244px;
+}
+
+.yz-code {
+    margin-left: 60px;
+    overflow: hidden;
+    float: left;
+    height: 42px;
+    background-color: transparent;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 270px
+}
+
+.yz-x {
+    float: left;
+    padding-left: 10px;
+    height: auto;
+    height: 44px;
+}
+
+.yz-div-image {
+    float: left;
+    height: 43px;
+}
+
+.yz-image {
+    width: 97px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+}
+
+.main-flor {
+    width: 100%;
+    height: 45px;
+    position: relative
+}
+
+.button-submit {
+    width: 132px;
+    margin: 0 auto;
+    height: 44px;
+    position: relative
+}

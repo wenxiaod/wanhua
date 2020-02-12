@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="author" content="成都蓉视通科技有限公司" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="【成都蓉视通科技有限公司】是一家聚焦于化工物联网领域的国家高新技术企业，是四川省战略性新兴产业示范企业，公司以安全管控和智能管理业务为核心，致力于为化工企业提供完备而可靠的智能化解决方案。">
+    <script src="http://webapi.amap.com/maps?v=1.4.11&key=cafee8128684017b5c59a3dfd81e0560&plugin=AMap.Geocoder,AMap.Autocomplete,AMap.PlaceSearch"></script>
+    <title>数字管廊综合管理系统</title>
+
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./css/antd.min.css" rel="stylesheet" />
+    <link href="./css/select2.css" rel="stylesheet" />
+    <link href="./css/select2-bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/perfect-scrollbar.min.css" rel="stylesheet" />
+    <link href="./css/iconfont.css" rel="stylesheet" />
+    <!-- <link href="./css/iconfont.css" rel="stylesheet" /> -->
+    <link href="./css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/iaicn.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/json.js"></script>
+
+    <!--<link href="~/Content/css/water/template1/light.css" rel="stylesheet" />-->
+
+
+</head>
+
+<body class="aside_unfold" style="height:100%;min-width:1024px">
+    <header class="header" id="nav2">
+        <div class="header-logo" style="width:400px;position:relative;line-height: 60px;float:left;display:none;">
+            <a>
+                <img src="./images/logo.png" style="width: 239px; /* height: 45px; */ position: absolute; left: 0; top: 8px;" alt="logo">
+                <img class="XiTongNameBg" src="./images/XiTongNameBg.png" alt="Alternate Text" />
+                <span class="XiTongName">SCADA系统</span>
+            </a>
+        </div>
+
+        <div class="st-main">
+            <ul class="iai-headnav">
+                <!--过滤掉只配置子菜单未配置父级菜单的情况，父级菜单的ParentCode为当前domainid+1
+                                还可以判断当前节点的父级节点在列表里是否存在，但是这种方式循环次数太多为N*N-->
+                <li class="iai-headnav-item iai-headnav-item-selected">
+                    <a href="/home/dashboard">
+                        <i class="icon iconfont icon-shouye"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <!--过滤掉只配置子菜单未配置父级菜单的情况，父级菜单的ParentCode为当前domainid+1
+                                还可以判断当前节点的父级节点在列表里是否存在，但是这种方式循环次数太多为N*N-->
+                <li class="iai-headnav-item">
+                    <a href="/DataSearch/RealTime">
+                        <i class="icon iconfont icon-shishi"></i>
+                        <span>实时</span>
+                    </a>
+                </li>
+                <!--过滤掉只配置子菜单未配置父级菜单的情况，父级菜单的ParentCode为当前domainid+1
+                                还可以判断当前节点的父级节点在列表里是否存在，但是这种方式循环次数太多为N*N-->
+                <li class="iai-headnav-item">
+                    <a href="/alert/search">
+                        <i class="icon iconfont icon-baojing"></i>
+                        <span>报警</span>
+                    </a>
+                </li>
+                <!--过滤掉只配置子菜单未配置父级菜单的情况，父级菜单的ParentCode为当前domainid+1
+                                还可以判断当前节点的父级节点在列表里是否存在，但是这种方式循环次数太多为N*N-->
+                <li class="iai-headnav-item">
+                    <a href="\DataAnalysis\OFTenperature">
+                        <i class="icon iconfont icon-jingyingyuce"></i>
+                        <span>光纤测温</span>
+                    </a>
+                </li>
+                <!--过滤掉只配置子菜单未配置父级菜单的情况，父级菜单的ParentCode为当前domainid+1
+                                还可以判断当前节点的父级节点在列表里是否存在，但是这种方式循环次数太多为N*N-->
+                <li class="iai-headnav-item iai-headnav-hassub">
+                    <a href="">
+                        <i class="icon iconfont icon-baobiao"></i>
+                        <span>统计报表</span>
+                    </a>
+                    <ul class="iai-headnav-subitems ant-menu ant-menu-root">
+                        <li class="ant-menu-item">
+                            <a href="/Report/SiteHistory" target=""><i class="iconfont "></i>站点历史</a>
+                        </li>
+                        <li class="ant-menu-item">
+                            <a href="/Report/DataAnalysis" target=""><i class="iconfont "></i>曲线分析</a>
+                        </li>
+                        <li class="ant-menu-item">
+                            <a href="/Report/AlarmAnalysis"><i class="iconfont"></i>报警分析</a>
+                        </li>
+                        <li class="ant-menu-item">
+                            <a href="/DataAnalysis/Postreview"><i class="iconfont"></i>事故追忆</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--过滤掉只配置子菜单未配置父级菜单的情况，父级菜单的ParentCode为当前domainid+1
+                                还可以判断当前节点的父级节点在列表里是否存在，但是这种方式循环次数太多为N*N-->
+                <li class="iai-headnav-item iai-headnav-hassub">
+                    <a href="">
+                        <i class="icon iconfont icon-fenxi"></i>
+                        <span>站点信息</span>
+                    </a>
+                    <ul class="iai-headnav-subitems ant-menu ant-menu-root">
+                        <li class="ant-menu-item">
+                            <a href="/BaseInfo/DituInfoConfig" target=""><i class="iconfont "></i>站点数据配置</a>
+                        </li>
+                        <li class="ant-menu-item">
+                            <a href="/BaseInfo/DituParamConfig" target=""><i class="iconfont "></i>站点参数配置</a>
+                        </li>
+                        <li class="ant-menu-item">
+                            <a href="/BaseInfo/UserInfoConfig" target=""><i class="iconfont "></i>帐号权限配置</a>
+                        </li>
+                        <li class="ant-menu-item">
+                            <a href="/BaseInfo/DituGroup" target=""><i class="iconfont "></i>站点分组配置</a>
+                        </li>
+                        <li class="ant-menu-item">
+                            <a href="/Views/Water/Template2/BaseInfo/OfflineRecords.html" target=""><i class="iconfont "></i>离线记录查询</a>
+                        </li>
+                        <li class="ant-menu-item">
+                            <a href="/BaseInfo/GetRelationship" target=""><i class="iconfont "></i>参数关系</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div>
+                <span class="st-menu">
+                    <img src="./images/arrow_down.png" style="margin-top: -10px;width:24px;"/>
+                </span>
+            </div>
+            <div>
+
+                <div style="flex-grow: 1; line-height: 60px; color: white; font-size: 18px; float: right; width: 300px;display:none;">
+                    <div style="">
+                        <div></div>
+                        <div class="header-right-menu">
+                            <!-- 登录-->
+                            <div id="Wel" class="showXinxiBox  m-l-10 " style="height:60px;position: relative;float:left;padding-bottom: 0px;">
+                                <div class="huanYinDiv" style="padding-right: 0px;overflow: hidden;white-space: nowrap;-ms-text-overflow: ellipsis;line-height: 57px;width: 100px;height: 60px;">
+                                    <img src="./images/head.png" alt="" style="padding-bottom: 0px; ">
+                                    <span class="fts-14" style="padding-bottom: 0px;">张一鸣</span>
+                                    <!--小三角-->
+                                    <span class="arrow-down" style=" left:80px;right:5px;"></span>
+                                </div>
+                                <div class="xinXiBox">
+                                    <div class="xinXiListDiv" id="fullscreen" onclick="SetFullscreen()">
+                                        <img src="./images/fscroll.png" alt="全屏显示">
+                                        <a href="#" style="font-size: 14px; color: #474747;">全屏显示</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--应用中心-->
+                            <div id="Use" class="applition  m-l-10" style="width: 100px;overflow: hidden;height: 60px;font-size: 14px;float: left;" onclick="SetUse()">
+                                <img src="./images/appliction.png" alt="应用中心">
+                                <span style="">应用中心</span>
+                            </div>
+
+                            <!--退出按钮-->
+                            <div style=" width:72px; overflow: hidden; height :60px; font-size: 14px; float: left;">
+                                <div class="outBtn" onclick="LoginOut()">
+                                    <img src="./images/off.png" alt="退出系统">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </header>
+    <div class="container">
+        <div class="iai-asider">
+            <div class="iai-left-side-search">
+                <span class="ant-input-affix-wrapper">
+                    <input type="text" placeholder="搜索站点" class="ant-input ant-input-search" />
+                    <span class="ant-input-suffix"><i class="anticon anticon-search ant-input-search-icon"></i></span>
+                <div class="search-suguest" style="display:none;"></div>
+                </span>
+            </div>
+            <aside id="sildeMenu"></aside>
+            <div class="fold iai-aside-bar"><span class="caret"></span></div>
+        </div>
+        <div class="content">
+            <iframe id="pageframe" name="pageframe" height="100%" width="100%" frameborder="0" src="./pages/Map.html" style="background-color:#ffffff;"></iframe>
+        </div>
+    </div>
+    <div id="vueapp" class="alarm-popup">
+
+        <audio id="alarmTwo" src="/Content/Sound/Alarm01.wav" style=" visibility:hidden; display:none"></audio>
+        <span class="alarm-popup-title ant-badge">
+            <sup v-if="badgeCount>0" class="badge-count" v-text="badgeCount"></sup>
+            报警信息<i class="anticon anticon-caret-left"></i>
+            <img v-if="badgeCount>0" id="alarmImg" src="./images/alarm.gif" alt="" style="position: absolute;left: -40px;height: 32px;bottom: 0;" />
+        </span>
+        <div class="alarm-popup-time-header">
+            <h5>2020年02月</h5>
+            <ul>
+                <li name="2020-02-12" class="current">12</li>
+                <li name="2020-02-11">11</li>
+                <li name="2020-02-10">10</li>
+                <li name="2020-02-09">09</li>
+                <li name="2020-02-08">08</li>
+                <li name="2020-02-07">07</li>
+                <li class="anticon anticon-ellipsis"></li>
+            </ul>
+        </div>
+        <div class="alarm-popup-content">
+            <ul class="ant-timeline">
+                <li class="ant-timeline-item" v-for="(data,index) in Datas">
+                    <div class="ant-timeline-item-tail"></div>
+                    <div v-if="data.AlertStatusDesc>=2" class="ant-timeline-item-head ant-timeline-item-head-custom ant-timeline-item-head-green">
+                        <i class="iconfont icon-baojing" style="font-size: 20px;"></i>
+                    </div>
+                    <div v-else="data.AlertStatusDesc" class="ant-timeline-item-head ant-timeline-item-head-custom ant-timeline-item-head-red">
+                        <i class="iconfont icon-baojing" style="font-size: 20px;"></i>
+                    </div>
+                    <div class="ant-timeline-item-content">
+                        <div>
+                            <a href="javascript:void(0);" v-on:click="GoToAlerm(data.Id,data.Dtuid,data.DtuName)"> <span v-text="dateFormat(data.AlertTime)"></span></a>
+                            <div v-if="data.AlertStatusDesc>=2" data-show="true" class="ant-tag ant-tag-green" v-text="data.AlertState"></div>
+                            <div v-else="data.AlertStatusDesc" v-on:click="changealertstatus(data,index,data.Dtuid,data.DtuName)" data-show="true" class="ant-tag ant-tag-pink" v-text="data.AlertState"></div>
+                        </div>
+                        <div v-on:click="GoToAlerm(data.Id,data.Dtuid,data.DtuName)" v-text="data.AlertDesc" v-bind:class="{true:'ant-timeline-item-head-green',false:'alarm-popup-item-message'}[data.AlertStatusDesc>=2]"></div>
+                        <div class="realtime" v-on:click="GoToRealTime(data.Dtuid,data.DtuName)">实时数据</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/vue-2.3.3.js"></script>
+    <script src="./js/vue-resource-1.0.3.js"></script>
+    <script src="./js/protptype.extensions.js"></script>
+    <script src="./js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="./js/jquery.cookies.2.2.0.min.js"></script>
+    <script src="./js/jquery.extensions.js"></script>
+    <script src="./js/iaicn.js"></script>
+
+    <script src="./js/Dtu.js"></script>
+    <script src="./js/Enums.js"></script>
+    <script src="./js/JoomonWebSocket.js"></script>
+    <script src="./js/SvgZoom.js"></script>
+    <script src="./js/UrlHelper.js"></script>
+    <script src="./js/wsvg.js"></script>
+
+    <!--[if lt IE 9]>
+        <script  src="~/Scripts/html5shiv.js"></script>
+        <script  src="~/Scripts/excanvas.min.js"></script>
+        <script  src="~/Scripts/respond.min.js"></script>
+    <![endif]-->
+    <script src="./js/jquery.rotate.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+.header-logo {
+    text-align: center;
+}
+
+.header-logo a {
+    display: inline-block;
+    width: 210px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#sildeMenu .iai-menu {
+    overflow: auto;
+}
+
+.fold {
+    width: 8px;
+    height: 60px;
+    background: rgb(151, 163, 185);
+    position: absolute;
+    top: 45%;
+    z-index: 123;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.iai-asider {
+    width: 240px;
+    height: 100%;
+    position: relative;
+}
+
+.container .content {
+    top: 0;
+}
+
+.aside_fold .content {
+    left: 0 !important;
+}
+
+.aside_unfold .fold {
+    right: 0;
+}
+
+.aside_unfold .fold .caret {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    margin-left: 0 !important;
+}
+
+.aside_fold .fold .caret {
+    transform: rotate(270deg);
+    margin-left: 0;
+    margin-top: 25px;
+}
+
+.aside_fold aside,
+.aside_fold .iai-left-side-search {
+    display: none;
+}
+
+.home-icon-fontsize {
+    text-indent: 2px;
+    font-size: 17px;
+}
+
+.iai-icon-zh {
+    color: green;
+}
+
+.container {
+    padding: 0;
+}
+
+
+/***** header-nav-right *****/
+
+.header-nav-right .iai-headnav-subitems {
+    margin-top: -1px;
+}
+
+.header-nav-right .iai-headnav-subitems .vision-style {
+    position: absolute;
+    top: 0px;
+    width: 90px;
+    left: -90px;
+}
+
+.header-nav-right .iai-headnav-subitems .change-company {
+    position: absolute;
+    top: 0px;
+    width: 140px;
+    left: -140px;
+}
+
+.header-nav-right .dropdown:hover .iai-headnav-subitems {
+    display: block;
+}
+
+.header-nav-right .dropdown:hover span::after {
+    -webkit-transform: rotate(180deg) scale(0.75);
+    -ms-transform: rotate(180deg) scale(0.75);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+    transform: rotate(180deg) scale(0.75);
+}
+
+.header-nav-right .iai-headnav-subitems .ant-menu-item>ul {
+    display: none;
+}
+
+.header-nav-right .iai-headnav-subitems .ant-menu-item:hover ul {
+    display: block;
+}
+
+.header-nav-right .ant-menu {
+    line-height: 36px;
+}
+
+.header-nav-right .ant-menu-item {
+    text-align: left;
+}
+
+.header-nav-right .ant-menu-item .change-company>li {
+    padding: 0px 10px;
+}
+
+.header-nav-right .ant-menu-subitem>a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(0, 0, 0, .65);
+}
+
+.header-nav-right .vision-style a {
+    text-align: center;
+}
+
+.header-nav-right .change-company a {
+    text-align: left;
+}
+
+.header-nav-right .ant-menu-item:hover {
+    background-color: #189BF6;
+}
+
+.header-nav-right .ant-menu-item:hover .ant-menu-item-one {
+    color: #ffffff;
+}
+
+.header-nav-right .ant-menu-subitem:hover {
+    background-color: #189BF6;
+}
+
+.header-nav-right .ant-menu-subitem:hover a {
+    color: #ffffff;
+}
+
+.header-nav-right .triangle-icon {
+    width: 0px;
+    height: 0px;
+    border-width: 5px 5px 5px 0px;
+    border-color: transparent rgb(100, 126, 148);
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 10px;
+}
+
+.alarm-popup-content {
+    max-height: calc(100% - 75px);
+    position: relative;
+}
+
+.company li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-company {
+    text-align: center;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.company-search {
+    width: 90%;
+    height: 22px;
+    text-indent: 5px;
+    font-size: 12px;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+}
+
+
+/*新增*/
+
+#nav2 {
+    background: transparent;
+}
+
+.header {
+    text-align: center;
+    z-index: 99;
+    pointer-events: none;
+}
+
+.container {
+    top: 0px;
+}
+
+.iai-headnav {
+    display: block;
+    background: #e8ebf2;
+}
+
+.iai-headnav-item-selected,
+.iai-headnav-item:hover {
+    background: #e8ebf2;
+}
+
+.iai-headnav-item>a {
+    color: #6f8295;
+}
+
+.iai-headnav-item-selected>a,
+.iai-headnav-item:hover>a {
+    color: #189BF6;
+}
+
+.st-main {
+    pointer-events: all;
+    display: inline-block;
+    margin-top: -60px;
+    transition: all 0.3s ease-out 1s;
+}
+
+.st-main:hover {
+    transition: all 0.3s ease-out 0s;
+    margin-top: 0px;
+}
+
+.st-main:hover .st-menu {
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
+
+.st-main .st-menu {
+    opacity: 1;
+    transition: all 0.3s ease-out 1s;
+    cursor: default;
+}
+
+.realtime {
+    cursor: pointer;
+    text-decoration: underline
+}
+
+.realtime:hover {
+    color: red;
+}

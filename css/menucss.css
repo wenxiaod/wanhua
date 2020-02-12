@@ -1,0 +1,558 @@
+body {
+    background: url(../images/bg.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-color: #CCCCCC;*/
+    position: relative;
+    min-width: 1024px;
+    min-height: 768px;
+    background-color: transparent;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader( src='/images/menuImg/bg.png', sizingMethod='scale');
+    /*-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/images/menuImg/bac18089e160aacce9f6a6c3ca006b528e6e6933122dc-XVCZuP.png', sizingMethod='scale');*/
+}
+
+.clear {
+    clear: both;
+}
+
+.minMenuSize {
+    min-width: 290px;
+    min-height: 36px;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 10%;
+    margin-top: 5%;
+}
+
+.img1 {
+    margin-top: 20%;
+    margin-left: 20%;
+    height: auto;
+}
+
+.img2 {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 20px;
+}
+
+.hide {
+    display: block;
+}
+
+.xinXiBox {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    color: #666;
+    display: none;
+    z-index: 50;
+    text-align: center;
+}
+
+.TitleMenu {
+    width: 320px;
+    flex-grow: 1;
+    line-height: 50px;
+    color: white;
+    font-size: 16px;
+    float: right;
+    height: 60px;
+}
+
+.TitleExit {
+    display: inline-block;
+    width: 70px;
+    float: right;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.TitlMsg {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+    width: 90px;
+    text-align: center;
+}
+
+.xinXiListDiv {
+    cursor: pointer;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+    /*border-right: 1px solid rgba(85,163,238,1); 
+            border-left: 1px solid rgba(85,163,238,1); 
+            border-bottom: 1px solid rgba(85,163,238,1);*/
+}
+
+.xinXiListDiv:hover {
+    background: #b1b1b3;
+}
+
+.huanYinDiv {
+    display: inline-block;
+    line-height: normal;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    /*padding-right: 5px;*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 50px;
+    height: 50px;
+}
+
+.huanYinDiv:hover {
+    background: #3495F4;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 8px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+.applition:hover {
+    background: #3495F4;
+}
+
+.applition:nth-child(2) {
+    letter-spacing: 5px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+}
+
+.showXinxiBox {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.showXinxiBox:hover .xinXiBox {
+    display: block;
+}
+
+
+/*.lg-menu {
+    width:280px;
+    height:120px;
+    display:inline-block;
+    position:relative;
+    float:left
+}*/
+
+.sm-menu {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.md-menu {
+    width: 33%;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.flex-menu {
+    /*display:flex;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-lg-font {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    height: 19px;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #979797;
+    letter-spacing: 1px;
+}
+
+.menu-sm-font {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    height: 15px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #979797;
+    letter-spacing: 1px;
+}
+
+.menu-hover-font {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 16px;
+    text-align: center;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.size {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #CCCCCC;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 10%;
+}
+
+.code-bottom {
+    height: 80px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.webApp-adress {
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    display: block;
+}
+
+
+/*鼠标hover 图片变大*/
+
+
+/*.menu-hover>img:hover {
+   transform: scale(1.05);
+   
+}
+.menu-hover > img {
+    cursor: pointer;
+  transition: all 0.6s;
+}*/
+
+
+/*垂直剧中*/
+
+.middle {
+    vertical-align: middle;
+}
+
+.menu-main {
+    /*overflow:hidden*/
+}
+
+#Wel {
+    height: 60px;
+    width: 120px;
+}
+
+#Wel:hover .huanYinDiv {
+    background: #3495F4;
+}
+
+.menu-row {
+    margin-bottom: 10px;
+    align-items: center;
+    width: 100%;
+    /*IE 9*/
+    display: table;
+    display: flex;
+    float: left;
+    /*forIE9*/
+    display: -webkit-flex;
+    display: -webkit-box;
+    /*老版本语法：Safari,iOS,Android browser,old Webkit browser*/
+    display: -moz-box;
+    /*老版本语法：Firefox(buggy)*/
+    display: -ms-flexbox;
+    /*混合版本语法：IE 10*/
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-row-col {
+    width: auto;
+    float: left;
+    /*forIE9*/
+    min-width: 32%;
+    /*forIE9*/
+    text-align: center;
+    -webkit-flex: 1;
+    /*Chrome*/
+    -ms-flex: 1;
+    /*IE 10*/
+    -webkit-box-flex: 1;
+    /*OLD -iOS 6-,Safari 3.1-6*/
+    -moz-box-flex: 1;
+    /*OLD - Firefox 19-*/
+    flex: 1;
+    height: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-row-title {
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu-row-col img {
+    margin: 10% 10px 10px 10px;
+    height: 40%;
+}
+
+.menu-row-col2 {
+    align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    /*老版本语法：Safari,iOS,Android browser,old Webkit browser*/
+    display: -moz-box;
+    /*老版本语法：Firefox(buggy)*/
+    display: -ms-flexbox;
+    /*混合版本语法：IE 10*/
+    -js-display: flex;
+    display: flex;
+    float: left;
+    /*IE 9*/
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-row .maring-right-10 {
+    margin-right: 10px;
+}
+
+.maring-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.small-long {
+    -webkit-flex: 1;
+    /*Chrome*/
+    -ms-flex: 1;
+    /*IE 10*/
+    -webkit-box-flex: 1;
+    /*OLD -iOS 6-,Safari 3.1-6*/
+    -moz-box-flex: 1;
+    /*OLD - Firefox 19-*/
+    flex: 1;
+    float: left;
+    /*IE 9*/
+    /*min-width: 80%;*/
+    /*IE 9*/
+    height: 100%;
+}
+
+.square {
+    text-align: center;
+    float: left;
+    /*IE 9*/
+    position: relative;
+    /*IE 9*/
+    z-index: 1000;
+    /*IE 9*/
+}
+
+.square,
+.menu-row-col {
+    transition: height 0.4s;
+    -moz-transition: height 0.4s;
+    -webkit-transition: height 0.4s;
+    -o-transition: height 0.4s;
+}
+
+.square:hover,
+.menu-row-col:hover {
+    transform: scale(1.05);
+}
+
+.menu-lg-font2 {
+    color: #4b4b4b;
+}
+
+
+/* 多媒体查询 */
+
+
+/* 1080 1050 900 768 1024 960 800 768 720 600 864  */
+
+@media screen and (min-height: 612px) and (max-height:919px) {
+    .menu-main-div {
+        height: 307px;
+        position: absolute;
+        top: 24%;
+        left: 12.5%;
+    }
+    .menu-row {
+        height: 152px;
+    }
+    .square {
+        height: 71px;
+        width: 71px;
+    }
+    .square img {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        top: 16px;
+    }
+    .small {
+        height: 152px;
+        width: 152px;
+    }
+}
+
+@media screen and (max-height:790px) {
+    .menu-row-col img {
+        margin: 5% 10px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-main-div {
+        height: 260px;
+        position: absolute;
+        top: 24%;
+        left: 12.5%;
+    }
+    .menu-row {
+        height: 130px;
+    }
+    .square {
+        height: 60px;
+        width: 60px;
+    }
+    .square img {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 15px;
+    }
+    .small {
+        height: 130px;
+        width: 130px;
+    }
+    .small-long {
+        min-width: 80%;
+    }
+    .menu-row-col {
+        min-width: 23%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-main-div {
+        height: 260px;
+        position: absolute;
+        top: 24%;
+        left: 12.5%;
+    }
+    .menu-row {
+        height: 130px;
+    }
+    .square {
+        height: 60px;
+        width: 60px;
+    }
+    .square img {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 15px;
+    }
+    .small {
+        height: 130px;
+        width: 130px;
+    }
+    .small-long {
+        min-width: 80%;
+    }
+    .menu-row-col {
+        min-width: 23%;
+    }
+}
+
+@media screen and (min-height: 920px) and (max-height:1080px) {
+    .menu-main-div {
+        height: 384px;
+        position: absolute;
+        top: 24%;
+        left: 12.5%;
+    }
+    .menu-row {
+        height: 192px;
+    }
+    .square {
+        height: 91px;
+        width: 91px;
+    }
+    .square img {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        top: 23px;
+    }
+    .small {
+        height: 192px;
+        ;
+        width: 192px;
+        ;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .menu-main {
+        width: 1200px!important;
+        left: 50%;
+        margin-left: -600px!important;
+    }
+}

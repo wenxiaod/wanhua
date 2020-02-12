@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>系统首页</title>
+    <link href="../css/common.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/select2.min.css" rel="stylesheet" />
+    <link href="../css/layer.css" rel="stylesheet" />
+    <!--公共css样式-->
+    <link href="../css/styleIndex1.css" rel="stylesheet" />
+    <link href="../css/styleIndex.css" rel="stylesheet" />
+    <!--Index css样式-->
+    <link href="../css/bootstrap-table.min.css" rel="stylesheet" />
+
+
+    <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../js/layer/layer.min.js" type="text/javascript"></script>
+    <script src="../js/GlobalLoading.js" type="text/javascript"></script>
+    <script src="../js/Domain/Index.js?ver=1.0.2" type="text/javascript"></script>
+    <script src="../js/jquery.cookies.2.1.0.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/highcharts.js" type="text/javascript"></script>
+    <script src="../js/Domain/TaskMng.js" type="text/javascript"></script>
+    <script src="../js/main/CompanyList.js" type="text/javascript"></script>
+    <script src="../js/Select2/select2.min.js" type="text/javascript"></script>
+    <script src="../js/layui/lay/modules/layer.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+    <style>
+        .btn-xs:hover {
+            color: #fff !important;
+            background-color: #3276B1 !important;
+        }
+        
+        .btn-xs {
+            float: left !important;
+        }
+        
+        tr td:last-child {
+            display: flex !important;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            //定义全局加载事件
+            ObjIndex.LoadInfo(0);
+            //ObjIndex.ShowRecentPros();
+            //setInterval(function () {
+            //    ObjIndex.LoadInfo(_opt);
+            //    ObjIndex.ShowRecentPros();
+            //}, 60000);
+            $(".js-example-basic-single").select2();
+            $('#CompanyHide').hide();
+            LoadCompanyList('CompanyHide', 'companySelect');
+        });
+
+        function TaskInfomationShow() {
+            $('body', parent.document).find('#TaskInfomation').toggle();
+        }
+        //不能删除
+        function change(opt) {
+            ObjIndex.LoadInfo(opt);
+        }
+
+        function loadchange() {
+            ObjIndex.LoadInfo(0);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" style="display:none;" id="loadchange" onclick="loadchange()" />
+    <div class="Supplier unified fts-12 bg-white wrap">
+        <div class="content p-t-none">
+            <form name="form1" method="post" action="Index.aspx" id="form1" class="form-inline" role="form">
+                <div>
+                    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyODU4MjIwOTVkZBQ+Os0+NCk+ZQOyAEAUQ2qAznNFAKXrisq22Ev4gg9L" />
+                </div>
+
+                <div>
+
+                    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EEF3E56B" />
+                </div>
+                <div class="contentWrapper">
+                    <div class="col-xs-12" style="overflow: scroll; height: 400px;">
+                        <div class=" text-center resize-table table-content table-responsive">
+                            <div class="bootstrap-table">
+                                <div class="fixed-table-container ">
+                                    <div class="fixed-table-header" style="margin-right: 0px;">
+                                        <h4 class="panel-title tip">
+                                            我的工单
+
+                                        </h4>
+                                        <table id="RealTimeSerach">
+                                            <thead>
+                                                <tr>
+                                                    <th class="th-inner">工单编号
+                                                    </th>
+                                                    <th class="th-inner">工单标题
+                                                    </th>
+                                                    <th class="th-inner">路线
+                                                    </th>
+                                                    <th class="th-inner">状态
+                                                    </th>
+                                                    <th class="th-inner">执行者
+                                                    </th>
+                                                    <th class="th-inner">执行时间
+                                                    </th>
+                                                    <th class="th-inner">要求完成时间
+                                                    </th>
+                                                    <th class="th-inner" style="width: 175px;">操作
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-7" style="overflow: scroll; height: 400px;">
+                        <div class=" text-center resize-table table-content table-responsive">
+                            <div class="bootstrap-table">
+                                <div class="fixed-table-container ">
+                                    <div class="fixed-table-header" style="margin-right: 0px;">
+                                        <h4 class="panel-title tip">隐患列表</h4>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th class="th-inner">隐患标题
+                                                    </th>
+
+                                                    <th class="th-inner">隐患上报人
+                                                    </th>
+
+                                                    <th class="th-inner">上报日期
+                                                    </th>
+                                                    <th class="th-inner">状态</th>
+                                                    <th class="th-inner" style="width: 165px;">操作
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tabReportList" style="text-align: left;"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-5" style="height: 400px;">
+                        <div class=" text-center resize-table table-content table-responsive">
+                            <div class="bootstrap-table">
+                                <div class="fixed-table-container ">
+                                    <div class="fixed-table-header" style="margin-right: 0px;">
+                                        <h4 class="panel-title tip">隐患区域分析统计图</h4>
+                                        <div class="panel-heading">
+
+                                            <div id="ProContainer" style="height: 290px; width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    (function() {
+        //获取避免了同源策略的顶级窗体，使用冒泡方法
+        let getTop = function(current) {
+                if (!current)
+                    current = window;
+
+                //直接检检查parent是否受到同源策略限制
+                try {
+                    current.parent.location.origin;
+                } catch (e) {
+                    //parent受到同源策略限制时，返回当前window
+                    return current;
+                }
+
+                //此时，parent不受同源策略限制
+                //如果parent是顶级window，则返回top
+                if (current.parent == top)
+                    return top;
+                else
+                    return getTop(current.parent); //递归查找有效的顶级window对象
+            }
+            //将getTop方法注册到window中
+        window.getTop = getTop;
+        //将sopTop变量注册到window中 ，sop （same origin policy）
+        window.sopTop = getTop();
+    }());
+</script>

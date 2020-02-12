@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html style="width:100%">
+
+<head lang="en">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>数字管廊综合管理系统</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link type="image/x-icon" rel="Icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/show.css" />
+    <!-- <link href="Style/main/index.css" rel="stylesheet" />
+    <link href="Style/main/menu.css" rel="stylesheet" />
+    <link href="Style/main/show.css" rel="stylesheet" /> -->
+
+    <link type="text/css" rel="Stylesheet" href="./css/reset.css" />
+    <link type="text/css" rel="Stylesheet" href="./css/common.css" />
+    <link type="text/css" rel="Stylesheet" href="./css/layout.css" />
+    <!-- <link type="text/css" rel="Stylesheet" href="Style/page_fn.css?ver=1.1.0" /> -->
+    <link type="text/css" href="./css/select2.min.css" rel="stylesheet" />
+    <!-- <link type="text/css" rel="Stylesheet" href="Style/page_main.css?ver=1.1.0" /> -->
+
+    <link href="./css/exchange.css" rel="stylesheet" />
+    <link href="./css/select2.override.css" rel="stylesheet" />
+    <!--CSS-->
+    <link href="./css/style.css" id="cssfile" rel="stylesheet" />
+
+    <link href="./css/layer.css" rel="stylesheet" />
+    <!-- <link href="../Style/index_main/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+
+    <!--JQ-->
+    <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.cookies.2.1.0.js"></script>
+    <!--BootStrap-->
+
+    <script src="./js/bootstrap.min.js"></script>
+    <!--layer-->
+    <script src="./js/layer.min.js" type="text/javascript"></script>
+
+
+
+
+    <script src="./js/common.js" type="text/javascript"></script>
+    <!--图标-->
+
+    <style>
+        .Capacity {
+            width: 150px;
+            background: white;
+            font-size: 12px;
+        }
+        
+        .top {
+            background: #199fff;
+            padding: 5px 5px;
+        }
+        
+        .top span,
+        .top img {
+            vertical-align: middle;
+        }
+        
+        .top span {
+            color: #ffffff;
+        }
+        
+        .top img {
+            float: right;
+        }
+        
+        .flow {
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .flow li {
+            margin: 5px 0;
+        }
+        /*.xubox_title {
+            background-color: white !important;
+        }
+
+        .xulayer_png32 {
+            display: none !important;
+        }
+
+        .xubox_yes .xubox_botton2 {
+            background: none !important;
+            background-color: #0c68a7 !important;
+        }
+
+        .xubox_no .xubox_botton2 {
+            background: none !important;
+            background-color: white !important;
+        }*/
+    </style>
+    <script>
+        function ShowBoxTop(url, width, height) {
+            layer.closeAll();
+            $.layer({
+                type: 2,
+                shadeClose: true,
+                title: false,
+                closeBtn: [0, true],
+                shade: [0.5, '#000'],
+                fix: false,
+                title: '',
+                iframe: {
+                    src: url
+                },
+                area: [width + 'px', height + 'px']
+            });
+        }
+        $(function() {
+
+            $('#divCompany').hide();
+            //SetUpdateHtml();//检测更新
+            //ShowRecentPros();
+            $(".select2").select2();
+        });
+        //定时扫描最近八小时是否有新的隐患上报(根据角色，系统管理员可以看全部，普通用户和燃气管理员可以看本公司)
+        function ShowRecentPros() {
+
+            if ($.cookies.get("AlertNotice") != "0") {
+                $.ajax({
+                    type: "post",
+                    url: "Pages/HttpRequest/Index.ashx",
+                    dataType: "text",
+                    data: {
+                        "Flag": "ShowCurPro"
+                    },
+                    error: function(xhr) {
+                        window.parent.common.layoutClose();
+                    },
+                    success: function(result) {
+                        if (result != "") {
+                            ShowBoxTop('Pages/Domain/ShowCurPro.aspx', 980 * ($(window).width() / 1366), 550 * $(window).height() / 650);
+                            setTimeout(function() {
+                                ShowRecentPros()
+                            }, 1000 * 60)
+                        }
+                    }
+                });
+            }
+        }
+
+        //设置系统更新提示
+        function SetUpdateHtml() {
+            //$.ajax({
+            //    type: "POST",
+            //    data: "Flag=SetUpdateHtml",
+            //    url: "Pages/HttpRequest/Index.ashx",
+            //    dataType: "text",
+            //    error: function (xhr) {
+            //        $("#zhezhaoDefault").show();
+            //    },
+            //    success: function (data) {
+            //        if (data == "true") {
+            //            $("#zhezhaoDefault").hide();
+            //        } else {
+            //            $("#zhezhaoDefault").show();
+            //        }
+            //    }
+            //});
+        }
+    </script>
+
+    <style>
+        .badge {
+            display: inline-block;
+            min-width: 10px;
+            padding: 3px 7px;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            background-color: #777;
+            -webkit-border-radius: 10px;
+            -ms-border-radius: 10px;
+        }
+        
+        .downBox {
+            height: calc(100% - 60px) !important;
+        }
+        
+        html {
+            behavior: url(PIE.htc);
+        }
+        
+        #pwd {
+            color: #666;
+        }
+        
+        #TaskInfomation {
+            display: none;
+        }
+        
+        #nav {
+            height: 60px;
+            background: url(Images/index_main/titleBg.png);
+            font-size: 14px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body style="height: 100%; min-height: 100%;">
+    <div class="index-top">
+        <div class="nav" id="nav" style="width: 100%;    text-align: center;">
+            <div style="width:400px;position:relative;line-height: 60px;float:left">
+                <img src="./images/LOGO.png" style="width:195px;/*height: 45px;*/position:absolute;left:0;top:10px" alt="logo">
+                <img class="XiTongNameBg" src="./images/XiTongNameBg.png" alt="Alternate Text" />
+                <span class="XiTongName">巡检管理系统</span>
+            </div>
+            <div style="flex-grow:1;line-height: 60px;color: white;font-size:18px;float:right">
+                <div style="margin-right:-20px">
+                    <div></div>
+                    <div class="header-right-menu" style="width:350px;">
+                        <!-- 登录-->
+                        <div id="Wel" class="showXinxiBox " style="height:60px;position: relative;float:left">
+                            <div class="huanYinDiv" style="padding-right:6px;overflow: hidden;white-space:nowrap;text-overflow: ellipsis;line-height: 60px;">
+                                <img src="./images/head.png" alt="">
+                                <span class="fts-14" id="Company" style="display:none;">加载中</span>
+                                <span class="fts-14" id="div_UserId">加载中</span>
+                                <!--小三角-->
+                                <span class="arrow-down"></span>
+                            </div>
+                            <div class="xinXiBox">
+
+                                <div class="xinXiListDiv" id="fullscreen">
+                                    <img src="./images/fscroll.png" alt="Alternate Text" />
+                                    <a href="#" class="fts-14" style="font-size:14px;color:#555655;">全屏显示</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--应用中心-->
+                        <div id="Use" class="applition m-l-10" style="width: 100px; overflow: hidden; height: 60px; font-size: 16px; float: left">
+                            <a href="./home.html"><img src="./images/appliction.png" alt="应用中心"></a>
+                            <span class="fts-14">应用中心</span>
+                        </div>
+                        <!--消息-->
+
+                        <!--退出按钮-->
+                        <div class="m-l-10" style=" width: 72px; overflow: hidden; height: 60px; font-size: 16px; float: left;">
+                            <div class="outBtn">
+                                <a href="#" onclick="exitSystem(1)">
+                                    <img src="./images/off.png" alt="退出系统">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="downBox" style="position:absolute;top:60px;left:0;bottom:0;width:100%">
+        <div style="margin: 0;width: 100%;height: 100%;position:relative">
+            <div style="width: 175px;height:100%;float:left;position: relative;background-color:#e8ebf2;">
+                <!-- <div id="menuLeft" style="width: 175px; position: relative; height: 93%; overflow: auto;margin-top:5px;background-color:#e8ebf2;">
+                
+                </div> -->
+                <div id="menuLeft" style="width: 175px; position: relative; height: 93%; overflow: auto;margin-top:5px;background-color:#e8ebf2;">
+                    <ul class="show">
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-tag" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">系统首页</samp><img class="jiantou" style="display:none" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide"></div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-exclamation-circle" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">隐患管理</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">隐患上报</div>
+                                <div class="childDivList" style="letter-spacing:1px">隐患查询</div>
+                                <div class="childDivList" style="letter-spacing:1px">责任区域</div>
+                                <div class="childDivList" style="letter-spacing:1px">隐患类型</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-users" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">分组管理</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">添加分组</div>
+                                <div class="childDivList" style="letter-spacing:1px">班组管理</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-map-marker" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">巡点管理</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">新增巡查点</div>
+                                <div class="childDivList" style="letter-spacing:1px">巡查点查询</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-address-book" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">工作日志</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">班组日志</div>
+                                <div class="childDivList" style="letter-spacing:1px">填写工作日志</div>
+                                <div class="childDivList" style="letter-spacing:1px">工作日志</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-location-arrow" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">实时定位</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">实时定位</div>
+                                <div class="childDivList" style="letter-spacing:1px">路径回放</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-book" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">任务管理</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">任务指派</div>
+                                <div class="childDivList" style="letter-spacing:1px">任务查询</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-sitemap" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">指标管理</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">新增指标</div>
+                                <div class="childDivList" style="letter-spacing:1px">指标管理</div>
+                                <div class="childDivList" style="letter-spacing:1px">新增类型</div>
+                                <div class="childDivList" style="letter-spacing:1px">类型管理</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-map" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">线路管理</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">路线管理</div>
+                                <div class="childDivList" style="letter-spacing:1px">路线新增</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="fa fa-area-chart" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">统计分析</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                            <div class="childBox hide">
+                                <div class="childDivList" style="letter-spacing:1px">考核评估</div>
+                                <div class="childDivList" style="letter-spacing:1px">日历报表</div>
+                                <div class="childDivList" style="letter-spacing:1px">隐患类型分析</div>
+                                <div class="childDivList" style="letter-spacing:1px">隐患区域分析</div>
+                                <div class="childDivList" style="letter-spacing:1px">隐患数量分析</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="character" style="height:10px">
+
+                </div>
+            </div>
+            <!--中间内容盒子-->
+            <div id="Right-box" style="height: 100%;position:absolute;left:175px;right:0">
+                <iframe src="./pages/index.html" name="mainframe" style="border: none;width:100%;height:100%;" id="only-frame"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal inmodal pwd-modal fade" id="pwd-modal" tabindex="-1" role="dialog" aria-hidden="true" style="margin:0px auto;padding-top:20%;">
+        <div class="modal-dialog wid-400">
+            <div class="modal-content bg-white-0">
+                <div class="modal-header bg-base color-white" style="background: #0c68a7!important">
+                    <button type="button" class="close color-white" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h5 class="modal-title">修改密码</h5>
+                </div>
+                <div class="modal-body fts-15 unified text-center bg-white p-t-25">
+                    <form class="form-horizontal fts-12" role="form">
+                        <div class="form-group">
+                            <label for="old-pwd"><em class="color-red">* </em><span>原密码：</span></label>
+                            <input type="password" class="form-control wid-250" id="old-pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-pwd"><em class="color-red">* </em><span>新密码：</span></label>
+                            <input type="password" class="form-control wid-250" id="new-pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="q-pwd"><em class="color-red">* </em><span>确认密码：</span></label>
+                            <input type="password" class="form-control wid-250" id="q-pwd">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center bg-white">
+                    <button type="button" class="btn btn-primary btn-rad-4 fts-12" id="btnChangePassWord">确定</button>
+                    <button type="button" class="btn btn-default btn-rad-4 fts-12" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="TaskInfomation" class="com_absolute Capacity main_us  fn_us_Over com_DivBor" ">
+        <div class="top ">
+            <span>工单处理流程</span><img onclick="common.defaultCloseUs(); " src="Style/imgs/close.png ">
+        </div>
+        <ul class="flow ">
+            <li>管理人员创建工单</li>
+            <li>
+                 
+                <img src="./images/arrow1.png "></li>
+            <li>巡检人员接受工单</li>
+            <li>
+                <img src="./images/arrow1.png "></li>
+            <li>巡检人员开始巡检</li>
+            <li>
+                <img src="./images/arrow1.png "></li>
+            <li>巡检人员暂停/结束</li>
+            <li>
+                <img src="./images/arrow1.png "></li>
+            <li>巡检完成填写报告</li>
+        </ul>
+        <div class="top ">
+            <span>隐患上报流程</span>
+        </div>
+        <ul class="flow ">
+            <li>巡检人员上报隐患</li>
+            <li>
+                <img src="./images/arrow1.png "></li>
+            <li>管理人员收到隐患</li>
+            <li>
+                <img src="./images/arrow1.png "></li>
+            <li>管理人员创建工单</li>
+            <li>
+                <img src="./images/arrow1.png "></li>
+            <li>巡检人员接受工单</li>
+            <li>
+                <img src="./images/arrow1.png "></li>
+            <li>巡检人员处理隐患</li>
+            <li>
+                <img src="./images/arrow1.png "></li>
+            <li>巡检人员填写报表</li>
+        </ul>
+    </div>
+
+    <div class="succeedInfo "></div>
+    <div class="errorInfo "></div>
+</body>
+    </html>
+<script src="./js/showBo.js "></script>
+<script src="./js/HomeMain.js " defer="defer "></script>
+<script src="./js/index.js "></script>
+<script src="./js/jquery.cookies.2.1.0.js " type="text/javascript "></script>
+<script src="./js/Loading.js " type="text/javascript "></script>
+<script src="./js/ui_common.js " type="text/javascript "></script>
+<script src="./js/monitor.comm.js " type="text/javascript "></script>
+<script src="./js/select2.min.js " type="text/javascript "></script>
+<script src="./js/MainComanyId.js " type="text/javascript "></script>
+<script type="text/javascript ">
+    function exitSystem(sel) {
+        layer.confirm('确认退出系统吗？', function () {
+            document.cookie = null;
+            host = window.location.href;
+            host = host.substr(host.indexOf(". ") + 1, (host.length - host.indexOf(". ") + 1));
+            host = host.substr(0, host.indexOf(".com "));
+            console.log(host);
+            clearCookies();
+            window.sopTop.location.reload(true);
+            //window.sopTop.location.href = "http://login.chengdurst.work:8090/Login.html?AppCode=Work&BackUrl=http%3a%2f%2fwork. " + host + ".com%3a8090%2f&SSOTimeOut=600 ";
+        });
+    }
+    $(function () {
+        Fscreen()
+    })
+
+    $(function () {
+        LoadInfo();
+        $.ajax({
+            type: "POST ",  //提交方式
+            url: "/Pages/HttpRequest/PmsMng.ashx ",//路径
+            data: { "Flag ": "LoadMenu " },
+            success: function (result) {//返回数据根据结果进行相应的处理
+                var str = loadMenu($.parseJSON(result));
+                $("#menuLeft ").empty().append(str);
+            }
+        });
+
+        ////全屏/退出全屏
+        //var a = 0;
+        //$('#fullscreen').on('click', function () {
+        //    a++;
+        //    a % 2 == 1 ? enterfullscreen() || iefull() : exitfullscreen();
+        //});
+
+        //应用中心
+        $("#Use ").click(function () {
+            window.location = "http://xitongguanwang.whchem.com:8090 ";
+        });
+        //修改密码
+        $("#btnChangePassWord ").click(function () {
+            submitPassword();
+        });
+    })
+
+    var loadMenu = function (menuData) {
+        /*左菜单栏的小箭头*/
+        var imgJianTou1 = './images/jiantou1.png';
+        var str = $("<ul>
+        </ul>"); for (var i = 0; i
+        < menuData.length; i++) { var item=m enuData[i]; if (item.MenuName=='添加区域' || item.MenuName=='区域查询' || item.MenuName=='区域维护' ) { continue; } if (item.TreeDepth==0 ) { str.addClass( "show"); } else { str.addClass( "hide"); } var li=$ (
+            "<li class='varied'></li>"); var hoverMenu=$ ( "<div class='menuHover visibili'><div>"); li.append(hoverMenu); var div=$ ( "<div class='fatherBox'></div>"); var imgUrl=i tem.IconImageUrl; div.append( '<i class="' + imgUrl + '" ></i>'); div.append(
+            '<samp class="p-l-10 ZiTiSize">' + item.MenuName + '</samp>'); if (item.Childs.length> 0) { div.append('
+            <img class=jiantou src="' + imgJianTou1 + '" />'); } else { div.append('
+            <img class=jiantou style="display:none" src="" />'); } li.append(div); var childBox = $('
+            <div class="childBox hide"></div>'); if (item.Childs.length > 0) { for (var j = 0; j
+            < item.Childs.length; j++) { var childDivListitem=$ ( "<div class='childDivList' style='letter-spacing:1px'>" + item.Childs[j].MenuName + "</div>"); /*点击二级子菜单显示字体颜色和背景*/ childDivListitem.click(function () { if ($(this).css( 'color', '#252525')) { $(this).css(
+                'color', '#252525').siblings().css( 'color', '#252525'); //$(this).parent().css( 'color', '#064b98'); $(this).parent().parent().children( '.fatherBox').children( 'i').css( 'color', '#064b98'); $(this).parent().parent().children( '.fatherBox').children(
+                'samp').css( 'color', '#064b98'); $(this).parent().parent().siblings().children( '.childBox').children( '.childDivList').css( 'color', '#252525') } }); (function (data, dom, parentDom, childBox, item) { dom.hover(function () { if (parentDom.attr(
+                "isSelect")) { return; } parentDom.addClass( "activeVaried"); dom.addClass( "activeChildDivList"); }, function () { if (parentDom.attr( "isSelect")) { return; } parentDom.removeClass( "activeVaried"); dom.removeClass( "activeChildDivList"); }); dom.click(function
+                () { $( "#menuLeft").find( "li").siblings().removeAttr( "isSelect").removeClass( "activeVaried"); $( ".childBox").removeClass( "show").addClass( "hide"); $( ".sanJiaoDiv").removeClass( "show").addClass( "hide"); childBox.addClass( "show").removeClass(
+                "hide"); $( ".activeChildDivList").removeClass( "activeChildDivList"); parentDom.attr( "isSelect", true); parentDom.addClass( "activeVaried"); dom.addClass( "activeChildDivList"); if (item.OpenForm !="javascript:void(0)" && item.OpenForm.indexOf(
+                "aspx")> -1) { $('#only-frame').attr('src', item.OpenForm); } }); })(item, childDivListitem, li, childBox, item.Childs[j]); childBox.append(childDivListitem); } } li.append(childBox); str.append(li); (function (item, li, childBox, div, str, hoverMenu)
+                { div.click(function () { if (item.OpenForm != "javascript:void(0)" && item.OpenForm.indexOf("aspx") > -1) { $('#only-frame').attr('src', item.OpenForm); } $(".childBox").removeClass("show").addClass("hide"); $(".menuHover").addClass("visibili");
+                hoverMenu.removeClass("visibili"); str.find("li").find(".activeVaried").removeAttr("style").removeClass("activeVaried"); div.css("color", "rgb(6, 75, 152)"); div.addClass("activeVaried"); //移除其他dom的样式 if (li.attr("isSelect")) { childBox.removeClass("show").addClass("hide");
+                li.removeAttr("isSelect"); } else { childBox.addClass("show").removeClass("hide"); str.find("li").removeAttr("isSelect"); li.attr("isSelect", true); } var liDomList = str.find("li"); /*点击父div换箭头*/ if ($('.activeVaried>.jiantou').attr('src')
+                == './images/jiantou1.png') { $('.activeVaried>.jiantou').attr('src', 'Images/index_main/jiantou2.png'); $(this).parent().siblings().children().children('.jiantou').attr('src', './images/jiantou1.png'); $(this).parent().siblings().children('.fatherBox').children('samp').css('color',
+                '#252525'); $('.activeVaried>samp').css('color', '#064b98'); $(this).parent().siblings().children(".fatherBox").children("i").css('color', '#252525'); } else if ($('.activeVaried>.jiantou').attr('src') == 'Images/index_main/jiantou2.png')
+                { $('.jiantou').attr('src', './images/jiantou1.png'); //$(this).nextAll().children().css('color', '#064b98'); $('.fatherBox>samp').css('color', '#252525'); } else { $(this).nextAll().children().css('color', '#252525'); $('.fatherBox>samp').css('color',
+                '#252525'); } }); li.click(function () { div.addClass("activeVaried"); }, function () { if (li.attr("isSelect")) { return; } div.removeClass("activeVaried"); div.removeAttr("style"); }); })(item, li, childBox, div, str, hoverMenu); } return
+                str; } //提交密码修改方法 var submitPassword = function () { var old = $("#old-pwd").val(); var news = $("#new-pwd").val(); var newsT = $("#q-pwd").val(); //修改前验证 if (old == "") { showErrMsg("请输入原密码！"); return false; } if (news == "") { showErrMsg("请输入新密码！");
+                return false; } else { if (!(/^[A-Za-z0-9]{6,14}$/.test(news))) { showErrMsg("请输入6-14位包含数字、字母的密码！"); return false; } } if (newsT == "") { showErrMsg("请输入确认密码！"); return false; } else { if (!(/^[A-Za-z0-9]{6,14}$/.test(newsT))) { showErrMsg("请输入6-14位包含数字、字母的确认密码！");
+                return false; } } if ($("#new-pwd").val() != $("#q-pwd").val()) { $("#q-pwd").val(""); showErrMsg("两次输入的密码不一致,请重新输入密码。"); return false; } layer.msg("建设中", { icon: 7, time: 1000 }); return false; //执行密码修改 $.ajax({ type: 'POST', url: "/Home/SubmitUpdatePassword",
+                data: { oldPwd: $("#old-pwd").val(), newPwd: $("#new-pwd").val() }, async: true, dataType: "json", success: function (data) { if (data && data.Success) { showSuccessMsg("用户密码修改成功。"); $("#pwd-modal").modal("hide"); } else { showErrMsg("用户密码修改失败,请重试");
+                return false; } } }); }; //错误信息提示框 function showErrMsg(msg) { $(".errorInfo").html(msg); $(".errorInfo").show(); setTimeout('$(".errorInfo").fadeOut()', 1500); }; //成功信息提示框 function showSuccessMsg(msg) { $(".succeedInfo").html(msg); $(".succeedInfo").show();
+                setTimeout('$(".succeedInfo").fadeOut()', 1500); }; //控制全屏方法 function enterfullscreen() {//进入全屏 $("#fullscreen").text("退出全屏"); var docElm = document.documentElement; //W3C if (docElm.requestFullscreen) { docElm.requestFullscreen(); } //FireFox
+                else if (docElm.mozRequestFullScreen) { docElm.mozRequestFullScreen(); } //Chrome等 else if (docElm.webkitRequestFullScreen) { docElm.webkitRequestFullScreen(); } //IE11 else if (docElem.msRequestFullscreen) { docElem.msRequestFullscreen();
+                } } function Fscreen() { //全屏/退出全屏 var a = 0; $('#fullscreen').on('click', function () { a++; a % 2 == 1 ? enterfullscreen() || iefull() : exitfullscreen(); }); } //退出全屏方法 function exitfullscreen() { $("#fullscreen").text("全屏显示"); if (document.exitFullscreen)
+                { document.exitFullscreen(); } else if (document.mozCancelFullScreen) { document.mozCancelFullScreen(); } else if (document.webkitCancelFullScreen) { document.webkitCancelFullScreen(); } else if (document.msExitFullscreen) { document.msExitFullscreen();
+                } } //ie低版本的全屏，退出全屏都这个方法 function iefull() { $("#fullscreen").text("退出全屏"); var el = document.documentElement; var rfs = el.msRequestFullScreen; if (typeof window.ActiveXObject != "undefined") { //这的方法 模拟f11键，使浏览器全屏 var wscript = new ActiveXObject("WScript.Shell");
+                if (wscript != null) { wscript.SendKeys("{F11}"); } } }
+
+                </script>
+                <script>
+                    (function() {
+                        //获取避免了同源策略的顶级窗体，使用冒泡方法
+                        let getTop = function(current) {
+                                if (!current)
+                                    current = window;
+
+                                //直接检检查parent是否受到同源策略限制
+                                try {
+                                    current.parent.location.origin;
+                                } catch (e) {
+                                    //parent受到同源策略限制时，返回当前window
+                                    return current;
+                                }
+
+                                //此时，parent不受同源策略限制
+                                //如果parent是顶级window，则返回top
+                                if (current.parent == top)
+                                    return top;
+                                else
+                                    return getTop(current.parent); //递归查找有效的顶级window对象
+                            }
+                            //将getTop方法注册到window中
+                        window.getTop = getTop;
+                        //将sopTop变量注册到window中 ，sop （same origin policy）
+                        window.sopTop = getTop();
+                    }());
+                </script>

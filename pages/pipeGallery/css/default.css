@@ -1,0 +1,350 @@
+html,
+body,
+div,
+img,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 54px;
+    background: #064b98;
+}
+
+a {
+    color: #108ee9;
+    background: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+#logo {
+    line-height: 54px;
+    text-align: center;
+    float: left;
+    padding: 0 20px 0 10px;
+}
+
+#logo img {
+    margin-right: 10px;
+}
+
+#logo li {
+    float: left;
+}
+
+#logo span {
+    color: #fff;
+}
+
+#logo li:nth-of-type(1) {
+    max-width: 210px;
+    height: 54px;
+    float: left;
+}
+
+#logo li:nth-of-type(1) span {
+    max-width: 195px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+#logo li:nth-of-type(3) {
+    max-width: 90px;
+    height: 54px;
+}
+
+#logo li:nth-of-type(3) span {
+    padding-left: 10px;
+    max-width: 95px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    font-size: 12px;
+}
+
+
+/*jsad*/
+
+.iai-headnav {
+    display: inline-block;
+}
+
+.iai-headnav .iai-headnav-item span {
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+.iai-headnav-item {
+    background-color: #064b98;
+    position: relative;
+    float: left;
+    min-width: 70px;
+    height: 60px;
+    padding: 4px 8px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.iai-headnav-item:hover .iai-headnav-subitems {
+    display: block;
+}
+
+.iai-headnav .ant-menu {
+    line-height: 36px;
+}
+
+.iai-headnav-subitems {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.ant-menu {
+    outline: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    z-index: 1050;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .65);
+    background: #fff;
+    line-height: 46px;
+}
+
+.iai-headnav .ant-menu-item {
+    text-align: left;
+}
+
+.icon-sm {
+    font-size: 12px;
+    margin-left: 3px;
+    display: inline-block;
+    transform: scale(.75);
+}
+
+.ant-menu-item,
+.ant-menu-sub {
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.iai-headnav-item .icon {
+    display: block;
+    margin-bottom: -4px;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.ant-menu-item,
+.ant-menu-submenu-title {
+    margin: 0;
+    padding: 0 20px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.iai-headnav-item-selected {
+    background: #fff;
+}
+
+.iai-headnav-item>a {
+    color: #F3EBEC;
+}
+
+.iai-headnav-item:hover {
+    background: #fff;
+}
+
+.iai-headnav-item-selected>a,
+.iai-headnav-item:hover>a {
+    color: #189BF6;
+}
+
+.icon-small {
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.iai-headnav-subitems .ant-menu-item a {
+    color: #000000;
+}
+
+.iai-headnav-subitems .ant-menu-item:hover {
+    background: #189BF6;
+}
+
+.iai-headnav-subitems .ant-menu-item:hover a {
+    color: #fff;
+}
+
+.iai-headnav-hassub:hover .icon-zhankai,
+.iai-headnav-user:hover .icon-zhankai {
+    transform: scale(0.75) rotate(180deg);
+    -ms-transform: scale(0.75) rotate(180deg);
+    /* Internet Explorer */
+    -moz-transform: scale(0.75) rotate(180deg);
+    /* Firefox */
+    -webkit-transform: scale(0.75) rotate(180deg);
+    /* Safari 和 Chrome */
+    -o-transform: scale(0.75) rotate(180deg);
+    /* Opera */
+    transition: .3s;
+}
+
+.iai-headnav-hassub:hover .icon-zhankai {
+    color: #189BF6;
+}
+
+.header-nav-right {
+    height: 54px;
+    line-height: 54px;
+    float: right;
+}
+
+.header-nav-right>ul>li {
+    float: left;
+    padding: 0 10px;
+    cursor: pointer;
+    height: 54px;
+}
+
+.header-nav-right>ul>li>a {
+    color: #fff;
+    font-size: 13px;
+}
+
+.header-nav-right>ul>li:hover>a {
+    color: #F3EBEC;
+}
+
+li.user-config .iai-headnav-subitems li {
+    height: 36px;
+    line-height: 36px;
+}
+
+.company {
+    position: absolute;
+    left: -140px;
+    top: 0;
+    width: 140px;
+    display: none;
+    max-height: 360px;
+    overflow: hidden;
+}
+
+.company li a {
+    color: #000 !important;
+}
+
+.company li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.company li:hover a {
+    color: #fff !important;
+}
+
+li.user-config:hover .iai-headnav-subitems {
+    display: block;
+}
+
+li.user-config .active .company {
+    display: block;
+}
+
+.font-big {
+    font-size: 14px;
+    color: #fff;
+}
+
+.logo_Name {
+    display: initial;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+.logo_Img {
+    width: 190px;
+}
+
+.bottom-outer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.only-frame {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    height: 100%;
+    z-index: 999;
+    width: 100%;
+    *width: 101%;
+    _width: 101%;
+    position: relative;
+}
+
+
+/*新增*/
+
+.sanjiao {
+    width: 0px;
+    height: 0px;
+    border-bottom: 5px solid transparent;
+    /* left arrow slant */
+    border-top: 5px solid transparent;
+    /* right arrow slant */
+    border-right: 5px solid #908484;
+    /* bottom, add background color here */
+    font-size: 0px;
+    line-height: 0px;
+    display: inline-block;
+    margin: 0 5px 0 -10px;
+}
+
+.iai-headnav-subitems .ant-menu-item:hover .sanjiao {
+    border-right: 5px solid #fff;
+}
+
+.item-company {
+    text-align: center;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.company-search {
+    width: 80%;
+    height: 22px;
+    text-indent: 5px;
+    font-size: 12px;
+}

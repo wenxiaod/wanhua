@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>数字管廊综合管理系统</title>
+    <link href="./images/favicon.ico" rel="shortcut icon" />
+    <link href="./css/default.css" rel="stylesheet" />
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet" />
+    <link href="./css/iconfont/iconfont.css" rel="stylesheet" />
+    <link href="./css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="./css/NewPage/index.css" rel="stylesheet" />
+    <link href="./css/NewPage/show.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" />
+
+
+    <script src="./js/jquery-1.12.2.min.js"></script>
+    <script src="./js/Bootstrap/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/jquery.mousewheel.js"></script>
+    <script src="./js/perfect-scrollbar.js"></script>
+    <script src="./js/HomeMain.js"></script>
+    <script src="./js/showBo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/jquery.cookies.2.2.0.min.js" defer="defer" type="text/javascript"></script>
+    <style>
+        .ui-dialog {
+            position: fixed;
+            z-index: 50001;
+            left: 45%;
+            top: 45%;
+            width: 350px;
+            height: 110px;
+            margin-left: -150px;
+            margin-top: -80px;
+            background: #fff;
+            text-align: center;
+            border: 1px outset #ddd;
+            font-family: Verdana, Helvetica, sans-serif;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="nav2" class="nav" style="width: 100%; height: 60px; padding-left: 20px; padding-right: 20px">
+        <div style="width: 410px;line-height: 60px; float: left; height: 60px;">
+            <img src="./images/logo.png" style="position:absolute;left:-2px;top: 5px;" alt="logo">
+            <img class="XiTongNameBg" src="./images/XiTongNameBg.png" alt="Alternate Text" />
+            <span class="XiTongName">地下管网系统</span>
+        </div>
+        <!--<ul  class="iai-headnav"  id="meNav">
+            </ul> -->
+        <div style="flex-grow: 1; line-height: 60px; color: white; font-size: 18px; float: right">
+            <div>
+                <div></div>
+                <div class="header-right-menu">
+                    <!-- 登录-->
+                    <div id="Wel" class="showXinxiBox " style="height: 60px; position: relative; float: left;">
+                        <div class="huanYinDiv" style="padding-right: 6px; padding-left: 2px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 60px; width: 100px;">
+                            <img src="./images//head.png" alt="">
+                            <span class="fts-16" id="div_UserId"></span>
+                            <!--小三角-->
+                            <span class="arrow-down" style="right: 12px;"></span>
+                        </div>
+                        <div class="xinXiBox" style="z-index: 9999">
+                            <div class="xinXiListDiv" id="fullscreen">
+                                <img src="./images//fscroll.png" alt="全屏显示" />
+                                <a href="#" style="font-size: 14px">全屏显示</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--应用中心-->
+                    <div id="Use" class="applition " style="width: 100px; overflow: hidden; padding-left: 7px; height: 60px; font-size: 14px; float: left">
+                        <img src="./images//appliction.png" alt="应用中心">
+                        <span>应用中心</span>
+                    </div>
+
+                    <!--退出按钮-->
+                    <div class="" style="width: 72px; overflow: hidden; height: 60px; font-size: 14px; float: left; margin-right: 10px;">
+                        <div class="outBtn" id="pullOut">
+                            <img src="./images//off.png" alt="退出系统">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--下部-->
+    <div class="downBox" style="position: absolute; top: 60px; left: 0; bottom: 0; width: 100%">
+        <div style="margin: 0; width: 100%; height: 100%; position: relative">
+            <div style="width: 175px; height: 100%; float: left; position: relative; background: #e8ebf2;">
+                <div id="meNav" style="width: 175px; position: relative; height: 100%; overflow: auto; background: #e8ebf2;">
+                    <ul class="show">
+                        <li class="varied activeVaried" isselect="true">
+                            <div class="menuHover">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox activeVaried"><i class="icon iconfont " style="color: rgb(6, 75, 152);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(6, 75, 152);">管网查询</samp><img class="jiantou" src="./images/jiantou2.png"></div>
+                            <div class="childBox show">
+                                <div class="childDivList activeChildDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">管网总图</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">雨水管网</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">回用水管网</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">生活污水管网</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">生活污水设计</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">再生水管网</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">消防水管网</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">生活水管网</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">工业水管网</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">工业水设计</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">消防水设计</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">生活水设计</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">回用水设计</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--中间内容盒子-->
+            <div id="Right-box" style="height: 100%; position: absolute; left: 175px; right: 0">
+                <iframe src="./pages/Map.html" id="only-frame" class="only-frame" scrolling="0" name="mainframe" frameborder="no">
+                    <div id="map_controller" class="map_controller"><img src="../../Images/icon_gw/Icon_P.png" alt="" title="平面地图" onclick="_option_PiM()" name="map" id="_div_map_select_option_normal"><span style="color:#666;font-family: -webkit-pictograph;margin: 0px 17px;">|</span><img src="../../Images/icon_gw/hide_G.png" onclick="_option_GoD()" alt="" title="高德卫星地图" name="map" id="_div_map_select_option_gmap"><span style="color:#666;font-family: -webkit-pictograph;margin: 0px 17px;">|</span><img src="../../Images/icon_gw/hide_GD.png" onclick="_option_GuG()" alt="" title="谷歌卫星地图" name="map" id="_div_map_select_option_amap"><span style="color:#666;font-family: -webkit-pictograph;margin: 0px 17px;">|</span><img src="../../Images/icon_gw/ceju1.png" alt="" title="开始测距" id="_div_map_PrecisionRanging"><div class="margintop10"><label>地图样式</label><select id="selMapStyle" class="form-control toolbar_form-control"><option value="normal">标准</option><option value="dark">幻影黑</option><option value="light">月光银</option><option value="grey">雅士灰</option><option value="whitesmoke">远山黛</option><option value="blue">靛青蓝</option> </select></div><div id="toolbar_features" class="margintop10"><img name="bg" id="bg" class="toolbar_features_img" src="../../Images/icon_gw/checkbox.png"><label class="toolbar_features_label">背景</label><img name="road" id="road" class="toolbar_features_img" src="../../Images/icon_gw/checkbox.png"><label class="toolbar_features_label">道路</label><img name="building" id="building" class="toolbar_features_img" src="../../Images/icon_gw/checkbox.png"><label class="toolbar_features_label">建筑物</label><img name="point" id="point" class="toolbar_features_img" src="../../Images/icon_gw/checkbox.png"><label class="toolbar_features_label">标注</label></div><div id="drawTools" class="margintop10  text-align_center"> <ul class="toolbar_ul"></ul></div></div>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--<div id="content" class="bottom-outer clearfix1">
+        <iframe src="Pages/PipeView/ViewPipe.aspx" id="only-frame" class="only-frame" scrolling="0"
+            name="mainframe" frameborder="no"></iframe>
+    </div>-->
+    <script>
+        $(function() {
+                $(".change-company").hover(function() {
+                    $(this).addClass("active");
+                }, function() {
+                    $(this).removeClass("active");
+                });
+                var g = $(window).height(); // 屏幕高度
+                //全屏/退出全屏
+                var a = 0;
+                $('#fullscreen').on('click', function() {
+                    a++;
+                    a % 2 == 1 ? enterfullscreen() : exitfullscreen();
+                });
+                $("#Use").click(function() {
+                    $.ajax({
+                        type: "POST",
+                        data: "flag=portal",
+                        url: "Pages/HttpRequest/PmsMgr.ashx",
+                        dataType: "text",
+                        error: function(xhr) {
+                            console.log(xhr);
+                        },
+                        success: function(data) {
+                            window.location = data;
+                        }
+                    });
+                });
+            })
+            //控制全屏方法
+        function enterfullscreen() { //进入全屏
+            $("#fullscreen").text("退出全屏");
+            var docElm = document.documentElement;
+            //W3C
+            if (docElm.requestFullscreen) {
+                docElm.requestFullscreen();
+            }
+            //FireFox
+            else if (docElm.mozRequestFullScreen) {
+                docElm.mozRequestFullScreen();
+            }
+            //Chrome等
+            else if (docElm.webkitRequestFullScreen) {
+                docElm.webkitRequestFullScreen();
+            }
+            //IE11
+            else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+        }
+        //退出全屏方法
+        function exitfullscreen() {
+            $("#fullscreen").text("全屏显示");
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>

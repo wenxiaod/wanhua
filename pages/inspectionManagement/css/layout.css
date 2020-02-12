@@ -1,0 +1,14 @@
+/*  main */
+.lay_main_top{height:6px; background:#e8e8e8; border-bottom:solid 1px #9eaebd; overflow:hidden;}
+.lay_main_banner{height:73px;}
+.lay_main_banner_logo{width:280px;height:73px;top:0px;left:0px;}
+.lay_main_over{height:29px;top:35px;left:285px;}
+.lay_main_overR{height:29px;top:35px;right:0px;}
+.lay_main_body{height:auto;padding:5px 0 5px 0;}
+.lay_main_Nav{width:160px;height:auto;left:3px; top:5px;}
+.lay_main_Fold{width:5px;height:auto;left:166px;top:5px;}
+.lay_main_content{width:100%;height:auto;left:172px;top:5px;}
+.lay_main_place{width:auto;height:30px;}
+.lay_main_function{height:40px;}
+.lay_main_footer{height:30px;line-height:40px; text-align:center; position:absolute;bottom:0px;}
+.lay_main_Fold_top{width:92px;height:12px;top:69px;left:50%;}

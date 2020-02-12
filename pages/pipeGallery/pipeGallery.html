@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-cn">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="../images/favicon.ico" rel="shortcut icon" />
+    <title>数字管廊综合管理系统</title>
+    <link href="./css/default.css" rel="stylesheet" />
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="./css/iconfont.css" rel="stylesheet" />
+    <link href="./css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/show.css" rel="stylesheet" type="text/css" />
+
+    <script src="../scripts/pipeGallery/jquery-1.12.2.min.js"></script>
+    <script src="../scripts/pipeGallery/bootstrap-3.3.7.min.js"></script>
+    <script src="../scripts/pipeGallery/bootstrap-select.js"></script>
+    <script src="../scripts/pipeGallery/jquery.mousewheel.js"></script>
+    <script src="../scripts/pipeGallery/perfect-scrollbar.js"></script>
+    <script src="../scripts/pipeGallery/HomeMain.js"></script>
+    <script src="../scripts/pipeGallery/showBo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../scripts/jquery.cookies.2.1.0.js" defer="defer" type="text/javascript"></script>
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="nav2" class="nav" style="width: 100%; height: 60px; padding-left: 20px; padding-right: 20px">
+        <div style="width: 410px; line-height: 60px; float: left; height: 60px;">
+            <img src="./images/logo.png" style="position: absolute; left: -2px; top: 5px;" alt="logo">
+            <img class="XiTongNameBg" src="./images/XiTongNameBg.png" alt="Alternate Text" />
+            <span class="XiTongName">管廊管理系统</span>
+        </div>
+
+        <div style="flex-grow: 1; line-height: 60px; color: white; font-size: 18px; float: right">
+            <div>
+                <div></div>
+                <div class="header-right-menu">
+                    <!-- 登录-->
+                    <div id="Wel" class="showXinxiBox" style="height: 60px; position: relative; float: left; z-index: 209999999;">
+                        <div class="huanYinDiv" style="padding-right: 6px; padding-left: 2px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 60px; width: 100px;">
+                            <img src="./images/head.png" alt="">
+                            <span class="fts-16" id="div_UserId"></span>
+                            <!--小三角-->
+                            <span class="arrow-down" style="right: 12px;"></span>
+                        </div>
+                        <div class="xinXiBox">
+                            <div class="xinXiListDiv" id="fullscreen">
+                                <img src="./images/fscroll.png" alt="全屏显示" />
+                                <a href="#" style="font-size: 14px">全屏显示</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--应用中心-->
+                    <div id="Use" class="applition " style="width: 100px; overflow: hidden; padding-left: 7px; height: 60px; font-size: 14px; float: left">
+                        <a href="./home.html"><img src="./images/appliction.png" alt="应用中心">
+                            <span style="color: #ffffff;">应用中心</span>
+                        </a>
+                    </div>
+
+                    <!--退出按钮-->
+                    <div class="" style="width: 72px; overflow: hidden; height: 60px; font-size: 14px; float: left;">
+                        <div id="pullOut">
+                            <img src="./images/off.png" alt="退出系统">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--下部-->
+    <div class="downBox" style="position: absolute; top: 60px; left: 0; bottom: 0; width: 100%">
+        <div style="margin: 0; width: 100%; height: 100%; position: relative">
+            <div style="width: 175px; height: 100%; float: left; position: relative; background: #e8ebf2;">
+                <div id="meNav" style="width: 175px; position: relative; height: 100%; overflow: auto; background: #e8ebf2;">
+
+                    <ul class="show">
+                        <li class="varied activeVaried">
+                            <div class="menuHover">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="icon iconfont icon-xiazai4-copy" style="color: rgb(6, 75, 152);"></i>
+                                <samp class="p-l-10 ZiTiSize" style="color: rgb(1, 1, 1);">信息查询</samp>
+                                <img class="jiantou" src="./images/jiantou1.png"></div>
+                            <!-- 移除hide 样式************************ -->
+                            <div class="childBox">
+                                <div class="childDivList activeChildDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">管廊信息查询</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">管线信息查询</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">管线列表</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">介质列表</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">流程图上传</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">流程图绑定</div>
+                            </div>
+                        </li>
+                        <li class="varied">
+                            <div class="menuHover visibili">
+                                <div></div>
+                            </div>
+                            <div class="fatherBox"><i class="icon iconfont icon-bbgbianji" style="color: rgb(37, 37, 37);"></i>
+                                <samp class="p-l-10 ZiTiSize" style="color: rgb(1, 1, 1);">管网编辑</samp>
+                                <img class="jiantou" src="./images/jiantou1.png"></div>
+                            <!-- 移除hide 样式************************ -->
+                            <div class="childBox">
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">管廊设计</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">管线设计</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">管廊列表</div>
+                                <div class="childDivList" style="letter-spacing: 1px; color: rgb(37, 37, 37);">剖面管理</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--中间内容盒子-->
+            <div id="Right-box" style="height: 100%; position: absolute; left: 175px; right: 0">
+                <iframe src="./pages/Map.html" id="only-frame" class="only-frame" scrolling="0" name="mainframe" frameborder="no"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(function() {
+                $(".change-company").hover(function() {
+                    $(this).addClass("active");
+                }, function() {
+                    $(this).removeClass("active");
+                });
+                var g = $(window).height(); // 屏幕高度
+                //全屏/退出全屏
+                var a = 0;
+                $('#fullscreen').on('click', function() {
+                    a++;
+                    a % 2 == 1 ? enterfullscreen() : exitfullscreen();
+                });
+
+                $("#Use").click(function() {
+                    $.ajax({
+                        type: "POST",
+                        data: "flag=portal",
+                        url: "Pages/HttpRequest/PmsMgr.ashx",
+                        dataType: "text",
+                        error: function(xhr) {
+                            console.log(xhr);
+                        },
+                        success: function(data) {
+                            window.location = data;
+                        }
+                    });
+
+                });
+            })
+            //控制全屏方法
+        function enterfullscreen() { //进入全屏
+            $("#fullscreen").text("退出全屏");
+            var ele = document.documentElement;
+            var fullScreenEnabled = document.fullScreenEnabled || document.webkitFullScreenEnabled || document.mozFullScreenEnabled || document.msFullScreenEnabled;
+            var isFullScreen = document.fullScreenElement || document.webkitFullScreenElement || document.mozFullScreenElement || document.msFullScreenElement;
+            if (fullScreenEnabled === undefined || fullScreenEnabled) {
+                if (isFullScreen === undefined) {
+                    if (ele.requestFullScreen) {
+                        ele.requestFullScreen();
+                    } else if (ele.webkitRequestFullScreen) {
+                        ele.webkitRequestFullScreen();
+                    } else if (ele.mozRequestFullScreen) {
+                        ele.mozRequestFullScreen();
+                    } else if (ele.msRequestFullScreen) {
+                        ele.msRequestFullScreen();
+                    } else {
+                        console.log('不存在进入全屏的方法！ => undefined');
+                    }
+                } else if (isFullScreen === null) {
+                    if (ele.requestFullScreen) {
+                        ele.requestFullScreen();
+                    } else if (ele.webkitRequestFullScreen) {
+                        ele.webkitRequestFullScreen();
+                    } else if (ele.mozRequestFullScreen) {
+                        ele.mozRequestFullScreen();
+                    } else if (ele.msRequestFullScreen) {
+                        ele.msRequestFullScreen();
+                    } else {
+                        console.log('不存在进入全屏的方法！ => null');
+                    }
+                } else {
+                    console.log('元素已经是全屏状态了！');
+                    return true;
+                }
+            } else {
+                console.log('不支持全屏模式！');
+            }
+        }
+        //退出全屏方法
+        function exitfullscreen() {
+            $("#fullscreen").text("全屏显示");
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+    </script>
+
+    <script src="../scripts/pipeGallery/yanue.pop.js"></script>
+    <script type="text/javascript">
+        var eventList = [];
+        var t1 = null;
+        //记得加载jquery
+        //作者：jjjjjjj
+        //使用参数：1.标题，2.链接地址，3.内容简介
+        $(function() {
+            //GetEventData();
+            //t1 = setInterval(GetEventData, 1000 * 60 * 60 * 24);
+            //$("#popMore").click(function () {
+            //    $('iframe').attr('src', "/event/Index");
+            //});00000
+        });
+        //function GetEventData() {
+        //    if (getCookie("pageload") != "41a4g5e64wea4g") {
+        //        var strshow = "";
+        //        $.ajax({
+        //            type: "post",  //提交方式
+        //            data: "opt=GetTimesInfo",
+        //            url: "Pages/HttpRequest/Common.ashx",
+        //            dataType: "json",
+        //            success: function (result) {//返回数据根据结果进行相应的处理
+        //                if (result) {
+        //                    var jsonresult = JSON.parse(result);
+        //                    if (!jsonresult.IsError && jsonresult.ResponseData.length > 0) {
+        //                        strshow = jsonresult.ResponseData.length;
+        //                        tip("设备维护提醒：", "", "您有&nbsp;&nbsp;<span style='color:#ff1520;font-size:22px;'>" + strshow + "</span>&nbsp;&nbsp;个设备需要维护");
+        //                    }
+        //                } else {
+
+        //                }
+        //            }
+        //        });
+        //    }
+        //}
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=")
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1
+                    c_end = document.cookie.indexOf(";", c_start)
+                    if (c_end == -1) c_end = document.cookie.length
+                    return unescape(document.cookie.substring(c_start, c_end))
+                }
+            }
+            return ""
+        }
+
+        function tip(title, titlehref, content) {
+            var pop = new Pop(title, titlehref, content, t1, $('iframe'));
+        }
+    </script>
+
+    <div id="pop" style="display: none;">
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            #pop {
+                margin-bottom: 15px;
+                margin-right: 12px;
+                background: #fff;
+                width: 300px;
+                font-size: 12px;
+                position: fixed;
+                z-index: 999999;
+                right: 0px;
+                bottom: 0px;
+            }
+            
+            #popHead {
+                line-height: 32px;
+                background: #3385ff;
+                border-bottom: 1px solid #e0e0e0;
+                position: relative;
+                font-size: 11px;
+                padding: 0 0 0 10px;
+                height: 33px;
+                color: white;
+            }
+            
+            #popHead #popClose {
+                position: absolute;
+                right: 10px;
+            }
+            
+            #popHead #check {
+                position: absolute;
+                right: 40px;
+                top: 10px;
+            }
+            
+            #popHead a#popClose:hover {
+                color: #f00;
+                cursor: pointer;
+            }
+            
+            #popallClose {
+                margin-top: 2px;
+                position: absolute;
+                right: 27px;
+            }
+            
+            #popContent {
+                padding-top: 5px;
+                font-size: 16px;
+                /*height:150px;*/
+                /*padding: 5px 10px;*/
+            }
+            
+            #check {
+                display: inline-block;
+                vertical-align: middle;
+                width: 13px;
+                height: 13px;
+                cursor: pointer;
+                /*-webkit-appearance: none;*/
+                background-color: transparent;
+                border: 0;
+                outline: 0 !important;
+                color: #d8d8d8;
+                margin: 0;
+                margin-right: 2px;
+            }
+            
+            #popTitle a {
+                line-height: 24px;
+                font-size: 14px;
+                font-family: '微软雅黑';
+                color: #333;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            
+            #popTitle a:hover {
+                color: #f60;
+            }
+            
+            #popIntro {
+                font-size: 14px;
+                /*text-indent: 24px;*/
+                line-height: 160%;
+                margin-left: 10px;
+                color: #666;
+            }
+            
+            #popMore {
+                text-align: right;
+                border-top: 1px dotted #ccc;
+                line-height: 24px;
+                margin: 8px 0 0 0;
+                font-size: 11px;
+                margin-right: 10px;
+            }
+            
+            #popMore a {
+                color: #f60;
+            }
+            
+            #popMore a:hover {
+                color: #f00;
+            }
+            /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+            
+             ::-webkit-scrollbar {
+                width: 3px;
+                height: 3px;
+                background-color: #d4d4d4;
+            }
+            /*定义滚动条轨道 内阴影+圆角*/
+            
+             ::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px #F5F5F5;
+                border-radius: 10px;
+                background-color: #e1e1e1;
+            }
+            /*定义滑块 内阴影+圆角*/
+            
+             ::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+                background-color: #e2e2e2;
+            }
+        </style>
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

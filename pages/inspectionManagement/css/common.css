@@ -1,0 +1,1418 @@
+.error {
+    color: red;
+}
+
+
+/*  width */
+
+.com_w100pen {
+    width: 100% !important;
+}
+
+.com_w99pen {
+    width: 99%;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+.xubox_main {
+    border-radius: 5px;
+}
+
+.com_w98pen {
+    width: 98%;
+}
+
+.com_w97pen {
+    width: 97%;
+}
+
+.com_w95pen {
+    width: 95%;
+}
+
+.com_w92pen {
+    width: 92%;
+}
+
+.com_w90pen {
+    width: 90%;
+}
+
+.com_w85pen {
+    width: 85%;
+}
+
+.com_w82pen {
+    width: 82%;
+}
+
+.com_w81pen {
+    width: 81%;
+}
+
+.com_w80pen {
+    width: 80%;
+}
+
+.com_w70pen {
+    width: 70%;
+}
+
+.com_w60pen {
+    width: 60%;
+}
+
+.com_w55pen {
+    width: 55%;
+}
+
+.com_w50pen {
+    width: 50%;
+}
+
+.com_w49pen {
+    width: 49%;
+}
+
+.com_w47pen {
+    width: 46.5%;
+}
+
+.com_w46pen {
+    width: 46%;
+}
+
+.com_w45pen {
+    width: 45%;
+}
+
+.com_w40pen {
+    width: 40%;
+}
+
+.com_w35pen {
+    width: 35%;
+}
+
+.com_w30pen {
+    width: 30%;
+}
+
+.com_w25pen {
+    width: 25%;
+}
+
+.com_w23pen {
+    width: 23%;
+}
+
+.com_w22pen {
+    width: 22%;
+}
+
+.com_w21pen {
+    width: 21%;
+}
+
+.com_w20pen {
+    width: 20%;
+}
+
+.com_w19point5pen {
+    width: 19.5%;
+}
+
+.com_w19point2pen {
+    width: 19.2%;
+}
+
+.com_w19pen {
+    width: 19%;
+}
+
+.com_w18pen {
+    width: 18%;
+}
+
+.com_w17pen {
+    width: 17%;
+}
+
+.com_w16pen {
+    width: 16%;
+}
+
+.com_w15point7pen {
+    width: 15.7%;
+}
+
+.com_w15point6pen {
+    width: 15.6%;
+}
+
+.com_w15pen {
+    width: 15%;
+}
+
+.com_w14point4pen {
+    width: 14.4%;
+}
+
+.com_w14pen {
+    width: 14%;
+}
+
+.com_w13pen {
+    width: 13%;
+}
+
+.com_w10pen {
+    width: 10%;
+}
+
+.com_w9pen {
+    width: 9%;
+}
+
+.com_w8pen {
+    width: 8%;
+}
+
+.com_w7pen {
+    width: 7%;
+}
+
+.com_w5pen {
+    width: 5%;
+}
+
+.com_w3pen {
+    width: 3%;
+}
+
+.com_w60fix {
+    width: 60px;
+}
+
+.tdComWidth3 {
+    width: 150px;
+}
+
+.com_w500fix {
+    width: 625px;
+}
+
+
+/*  height  */
+
+.com_h100pen {
+    height: 100%;
+}
+
+.com_h70pen {
+    height: 70%;
+}
+
+.com_h50pen {
+    height: 50%;
+}
+
+.com_h48pen {
+    height: 48%;
+}
+
+.com_h12fix {
+    height: 12px;
+}
+
+.com_h30fix {
+    height: 30px;
+}
+
+.com_h25fix {
+    height: 25px;
+}
+
+.com_h50fix {
+    height: 50px;
+}
+
+.com_h300fix {
+    min-height: 300px;
+}
+
+.com_h380fix {
+    min-height: 380px;
+}
+
+.com_h420fix {
+    min-height: 420px;
+}
+
+.com_h520fix {
+    min-height: 520px;
+}
+
+
+/*  pagdding    */
+
+.com_pdT10R0 {
+    padding: -10px 0 0 0;
+}
+
+.com_pd0p {
+    padding: 0px;
+}
+
+.com_pdT5 {
+    padding: 5px 0 0 0;
+}
+
+.com_pdL10px {
+    padding: 0 0 0 10px;
+}
+
+.com_pdL5R10 {
+    padding: 0 10px 0 5px;
+}
+
+.com_pdL10R10 {
+    padding: 0 10px 10px 0;
+}
+
+.com_pd20 {
+    padding: 20px;
+}
+
+
+/*  margin    */
+
+.com_marT1pen {
+    margin: 1% 0px 0px 0px;
+}
+
+.com_marT4 {
+    margin: 4px 0 0 0 !important;
+}
+
+.com_marT5 {
+    margin: 5px 0 0 0 !important;
+}
+
+.com_marT5L10 {
+    margin: 5px 0 0 10px !important;
+}
+
+.com_marT5L15 {
+    margin: 5px 0 0 15px !important;
+}
+
+.com_marT5R10 {
+    margin: 5px 10px 0 0 !important;
+}
+
+.com_marT6L25 {
+    margin: 6px 0 0 25px !important;
+}
+
+.com_marT6R4L26 {
+    margin: 6px 4px 0 26px !important;
+}
+
+.com_marT6R8L28 {
+    margin: 6px 8px 0 28px !important;
+}
+
+.com_marT8L10 {
+    margin: 8px 0 0 10px !important;
+}
+
+.com_marT8L25 {
+    margin: 8px 0 0 25px !important;
+}
+
+.com_marT15L25 {
+    margin: 15px 0 0 25%;
+}
+
+.com_marT15L35 {
+    margin: 15px 0 0 30%;
+}
+
+.com_marT5R5 {
+    margin: 5px 5px 0 0 !important;
+}
+
+.com_marT15 {
+    margin: 15px 0 0 0;
+}
+
+.com_marT25 {
+    margin-top: 25px;
+}
+
+.com_marT35 {
+    margin: 35px 0 0 0;
+}
+
+.com_marL10 {
+    margin: 0 0 0 10px;
+}
+
+.com_marL3p {
+    margin: 0 0 0 3%;
+}
+
+.com_marL10p {
+    margin: 0 0 0 10%;
+}
+
+.com_marL15p {
+    margin-left: 15%;
+}
+
+.com_marL20p {
+    margin-left: 20%;
+}
+
+.com_marL50p {
+    margin-left: 50%;
+}
+
+.com_marR10 {
+    margin-right: 10px;
+}
+
+.com_marR20 {
+    margin: 0 20px 0 0;
+}
+
+.com_marT8R10 {
+    margin: 8px 10px 0 0;
+}
+
+.com_mar0p {
+    margin: 0px;
+}
+
+.com_mar20p {
+    margin: 20px;
+}
+
+.com_marLeft10p {
+    margin-left: 10px;
+}
+
+
+/*  center */
+
+.com_Center_MaT0Auto {
+    margin: 0px auto 0px auto;
+}
+
+.com_Center_MaT5Auto {
+    margin: 5px auto 0px auto;
+}
+
+.com_Center_MaT15Auto {
+    margin: 15px auto 0px auto;
+}
+
+
+/*  float */
+
+.com_fr {
+    float: right;
+}
+
+.com_fl {
+    float: left;
+}
+
+.com_fca {
+    clear: both;
+}
+
+
+/*  position */
+
+.com_absolute {
+    position: absolute;
+}
+
+.com_relative {
+    position: relative;
+}
+
+
+/*  line-height */
+
+.com_lh30 {
+    line-height: 30px;
+}
+
+
+/*  display */
+
+.com_disnone {
+    display: none;
+}
+
+.com_disblock {
+    display: block;
+}
+
+.com_disinline {
+    display: inline;
+}
+
+.com_disinlineIE6 {
+    _display: inline;
+}
+
+.com_disSpan {
+    background-color: Red;
+    text-align: center;
+    cursor: pointer;
+    display: -moz-inline-box;
+    display: inline-block;
+}
+
+
+/*提示信息用于单元格显示内容过多的时候*/
+
+
+/* .com_readonly {
+    readonly: expression(this.readOnly=true);
+} */
+
+
+/*超出省略号*/
+
+.com_disnote {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*超出换行*/
+
+.com_lines {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.bgClosePic {
+    width: 18px;
+    height: 18px;
+    /* background: url(imgs/sprites/SmsCom.gif) no-repeat 0px 0px; */
+    cursor: pointer;
+    float: right;
+}
+
+
+/*  font */
+
+.com_ganeralFont {
+    font-size: 1.0em;
+}
+
+.com_font10size {
+    font-size: xx-small;
+}
+
+.com_font20size {
+    font-size: x-small;
+}
+
+.com_font30size {
+    font-size: 0.72em;
+}
+
+.com_font40size {
+    font-size: small;
+}
+
+.com_font50size {
+    font-size: large;
+}
+
+.com_font60size {
+    font-size: larger;
+}
+
+.com_font70size {
+    font-size: x-large;
+}
+
+.com_font80size {
+    font-size: xx-large;
+}
+
+.com_font13Px {
+    font-size: 13px;
+}
+
+.com_fblod {
+    font-weight: bold;
+}
+
+.com_SiteBg {
+    /* background: #3C7ED2 url(imgs/sprites/system_btn_bg.gif) repeat-x left top; */
+}
+
+.com_borderLeftNone {
+    border-left: 0px;
+}
+
+.com_borderRightNone {
+    border-right: 0px;
+}
+
+.com_one {
+    background-color: #CCCCFF;
+}
+
+.com_two {
+    background-color: #66CCFF;
+}
+
+.com_three {
+    background-color: #3399FF;
+}
+
+
+/*  color */
+
+.com_CnowPlace {
+    color: #3a6585;
+}
+
+.com_green {
+    color: #0ca414;
+}
+
+
+/*表格奇数行颜色*/
+
+.com_oddRow {
+    background-color: #E5E5E5;
+}
+
+.com_white {
+    background-color: white;
+}
+
+
+/*提示头颜色（蓝色）*/
+
+
+/*.com_Head { background-color: #B6CFED; }*/
+
+.com_SkyBlue {
+    background-color: #F5FAFD;
+}
+
+.com_bule {
+    color: #4b9ad5;
+}
+
+.com_white {
+    color: #fff;
+}
+
+.com_black {
+    color: #000;
+}
+
+.com_red {
+    color: Red;
+}
+
+.com_silver {
+    color: Silver;
+}
+
+.com_marroon {
+    color: #8A0000;
+}
+
+.com_orange {
+    color: #FFB486;
+}
+
+
+/*表格偶数行颜色，用于隔行变色*/
+
+.com_tableeven {
+    background-color: #E1E8EC;
+}
+
+
+/*  table tr color */
+
+.com_tdBG {
+    background: #edf3ff !important;
+}
+
+
+/*  overflow */
+
+.com_ovH {
+    overflow: hidden;
+}
+
+.com_ovXHYA {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/*  border */
+
+.com_tableBorder {
+    border: thin #99BBE8 solid;
+}
+
+.com_borderGray {
+    background-color: #CFEEFF;
+}
+
+.com_borderTest {
+    border: solid 1px red;
+}
+
+.com_borderSkyBlue {
+    border: solid 1px #E0EDF8;
+}
+
+.com_borderSilver {
+    border: 1px solid silver;
+}
+
+.com_noBorder {
+    border: 0 none !important;
+}
+
+.com_borderOutset {
+    border: 2px outset silver;
+}
+
+.com_borderCom {
+    border: thin solid #2DAAE2;
+}
+
+.com_DivBor {
+    border: thin solid #2DAAE2;
+    border-radius: 3px;
+}
+
+.com_DivBorder {
+    border: thin solid #2DAAE2;
+}
+
+.com_DivBorNormal {
+    border: thin solid gray;
+}
+
+.com_DivBorder_long {
+    border: thin solid #2DAAE2;
+    padding: 0px;
+    width: 100%;
+}
+
+
+/*  cursor */
+
+.com_cursorP {
+    cursor: pointer;
+}
+
+
+/*  hr */
+
+.com_hr {
+    border: 0 none;
+    border-bottom: dashed 1px #d1d1d1;
+    width: 98%;
+    height: 2px;
+    overflow: hidden;
+}
+
+
+/*  p */
+
+.com_P_Info {
+    height: auto;
+    line-height: 20px;
+    color: #8b8b8b;
+    text-align: left;
+    padding: 0 0 0 15px;
+}
+
+
+/*  H */
+
+.com_info_H1 {
+    height: 30px;
+    line-height: 30px;
+    border: 0 none;
+    border-bottom: solid 1px #bcbcbc;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+
+
+/*  text-align */
+
+.com_alignLeft {
+    text-align: left;
+}
+
+.com_alignCenten {
+    text-align: center !important;
+}
+
+.com_tr_th {
+    font-weight: bold;
+    color: #2297CD;
+}
+
+.com_TextCenter {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.com_TextRight {
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.com_TextRightVer2 {
+    text-align: right;
+}
+
+.com_TextLeft {
+    text-align: left;
+}
+
+.com_verticalTop {
+    vertical-align: top;
+}
+
+
+/* DatePicture */
+
+.com_bgdate {
+    /* background: #fff url(../../My97DatePicker/skin/datePicker.gif) no-repeat right; */
+}
+
+
+/* T|F Picture */
+
+.com_bgTrue {
+    width: 17px;
+    height: 17px;
+    /* background: url(../../Style/imgs/ComImg.gif) no-repeat -55px -1px; */
+    float: right;
+}
+
+.com_bgFalse {
+    width: 17px;
+    height: 17px;
+    /* background: url(../../Style/imgs/ComImg.gif) no-repeat -31px 0px; */
+    float: right;
+}
+
+
+/*DIV居中*/
+
+.com_DIV_center {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.com_DIV_rela {
+    margin: 6px;
+    padding: 2px;
+    width: 15%;
+}
+
+
+/*提示文字*/
+
+.com_gray {
+    color: Gray;
+}
+
+
+/*隐藏*/
+
+.com_hide {
+    display: none;
+}
+
+
+/*还可以输入好多字符*/
+
+.com_MSNotice {
+    background-color: #E8E8E8;
+    font-size: small;
+}
+
+
+/*关闭图标*/
+
+.bgClosePic {
+    width: 18px;
+    height: 18px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -5px 0px; */
+    cursor: pointer;
+    float: right;
+}
+
+.com_bgColor {
+    background-color: #DEE5EA;
+}
+
+
+/*IE图标*/
+
+.fn_ieLogo {
+    width: 19px;
+    height: 20px;
+    /* background: url(imgs/sprites/pic_sprites.gif) no-repeat -107px -179px; */
+    border-radius: 6px;
+    border: 1px solid Silver;
+    cursor: pointer;
+}
+
+
+/*建设银行*/
+
+.fn_bank_ccb {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -38px -109px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*招商银行*/
+
+.fn_bank_cmbc {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -143px -109px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*工商银行*/
+
+.fn_bank_icbc {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -9px -133px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*中国民生银行*/
+
+.fn_bank_cmbc {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -9px -162px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*上海浦东发展银行*/
+
+.fn_bank_spdb {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -9px -190px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*中国银行*/
+
+.fn_bank_boc {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -9px -217px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*华夏银行*/
+
+.fn_bank_hxb {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -9px -243px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*中国邮政银行*/
+
+.fn_bank_psbc {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -9px -268px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*农业银行*/
+
+.fn_bank_abc {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -105px -135px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*广东发展银行*/
+
+.fn_bank_gdb {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -105px -162px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*深圳发展银行*/
+
+.fn_bank_sdb {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -105px -189px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*兴业银行*/
+
+.fn_bank_cib {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -105px -217px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*交通银行*/
+
+.fn_bank_bocom {
+    width: 82px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -105px -244px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*VISA*/
+
+.fn_bank_visa {
+    width: 60px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -105px -269px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*万事达*/
+
+.fn_bank_mastercard {
+    width: 58px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -170px -269px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+
+/*银联*/
+
+.fn_bank_unionpay {
+    width: 58px;
+    height: 22px;
+    /* background: url(/Style/imgs/ComImg.gif) no-repeat -186px -243px; */
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid Silver;
+}
+
+.box_os .os_x,
+.box_os .osqq,
+.ico_os,
+.ico_gt,
+.ico_pp,
+.osqq .qq {
+    /* background: url(images/kf.gif) no-repeat; */
+}
+
+.box_os {
+    height: auto;
+    overflow: hidden;
+    width: 131px;
+    position: fixed;
+    right: 0;
+    top: 44px;
+    _position: absolute;
+    z-index: 9999;
+    display: none;
+}
+
+.box_os .os_x {
+    background-color: #f7f7f7;
+    background-position: 2px 2px;
+    width: 18px;
+    height: 20px;
+    float: right;
+    display: inline;
+    cursor: pointer;
+}
+
+.box_os .osqq {
+    width: 129px;
+    border: 1px solid #D1D1D1;
+    background-color: #fff;
+    background-position: 0 -120px;
+    clear: both;
+    padding: 37px 0 8px 0;
+    text-align: center;
+}
+
+.box_os .osqq p {
+    height: auto;
+    line-height: 20px;
+    width: 129px;
+    margin-top: 8px;
+}
+
+.box_os .osqq p strong {
+    color: #666;
+}
+
+.box_os .osqq img {
+    padding: 7px 0 3px 0;
+}
+
+.box_os .osqq p em {
+    color: #999;
+    display: block;
+}
+
+.box_os .osqq p span {
+    color: #547816;
+    display: block;
+}
+
+.box_os .osqq .qq {
+    background-position: -140px -120px;
+    display: block;
+    width: 99px;
+    height: 26px;
+    margin: 0 auto;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.acbox {
+    width: 130px;
+    overflow: hidden;
+}
+
+.acbox .ico_gt {
+    background-position: -60px 0;
+    border: 1px solid #299ec0;
+    border-top: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 33px;
+    float: right;
+}
+
+.acbox .ico_pp {
+    background-position: -60px -60px;
+    border: 1px solid #81b140;
+    border-top: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 33px;
+    float: right;
+    margin: 0 2px;
+}
+
+.onlineService {
+    background: none;
+    display: none;
+    width: 39px;
+    *width: 84px;
+    height: 178px;
+    ;
+    position: fixed;
+    right: 0;
+    top: 44px;
+    _position: absolute;
+}
+
+.onlineService .ico_os {
+    background-position: -2px -20px;
+    border: 1px solid #c7c7c7;
+    cursor: pointer;
+    width: 39px;
+    height: 98px;
+    float: right;
+}
+
+.onlineService .ico_gt {
+    background-position: right 0;
+    border: 1px solid #299ec0;
+    cursor: pointer;
+    width: 39px;
+    height: 37px;
+    float: right;
+    clear: both;
+}
+
+.onlineService .ico_pp {
+    background-position: right -60px;
+    border: 1px solid #81b140;
+    cursor: pointer;
+    width: 39px;
+    height: 37px;
+    float: right;
+    margin: 0 0 1px 0;
+    clear: both;
+}
+
+.box_os .osqq p span a {
+    color: #557917;
+}
+
+.fn_ieClose {
+    width: 18px;
+    height: 18px;
+    /* background: url(imgs/sprites/SmsCom.gif) no-repeat -372px -43px; */
+    cursor: pointer;
+}
+
+#tooltip {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #333;
+    padding: 2px;
+    display: none;
+    color: #fff;
+}
+
+.infoWindow {
+    width: 260px;
+    height: 310px;
+}
+
+.amap-info-close {
+    color: Red !important;
+}
+
+.ui-amap-example {
+    position: absolute;
+    bottom: 5%;
+    left: 5px;
+    z-index: 20;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(220, 221, 245, 0.6);
+}
+
+.change-big {
+    top: 100px;
+    width: 80%;
+}
+
+#lineExample {
+    padding-left: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/*说明*/
+
+.explain-text {
+    background-color: #d9edf7;
+    padding: 12px !important;
+    margin-top: 20px !important;
+    border-radius: 4px;
+    border: 1px solid #bce8f1;
+}
+
+.explain-text p {
+    margin: 0 !important;
+    color: #0d7c8c;
+    font-family: '微软雅黑', 'Arial' !important;
+}
+
+
+/*取消Bootstrap默认值*/
+
+.row {
+    margin: 0 !important;
+}
+
+.panel-default .margin10 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+body {
+    color: #34495e !important;
+    /*font-family: '微软雅黑','Arial' !important;*/
+}
+
+.panel-border {
+    border: 1px solid #ddd !important;
+    margin: 10px 0 !important;
+}
+
+.com-border-none {
+    border: none !important;
+}
+
+.margin10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.table-layout {
+    table-layout: fixed !important;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+th {
+    vertical-align: middle !important;
+}
+
+.iCenterH {
+    height: 100% !important;
+}
+
+
+/*地图说明图标*/
+
+.icoImg {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.topDownCenter {
+    vertical-align: middle !important;
+}
+
+.com_txtAlignCenter {
+    vertical-align: top;
+    margin-top: 1px;
+}
+
+input[type=checkbox] {
+    vertical-align: middle !important;
+    margin: 0 5px !important;
+}
+
+.img_block {
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+    border: 1px solid #A9A9A9;
+}
+
+.img_block img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    outline-style: none;
+}
+
+.buttonMargin {
+    margin: 3px;
+}
+
+.inputInline50 {
+    display: inline-block !important;
+    width: 50% !important;
+}
+
+.inputInline80 {
+    display: inline-block !important;
+    width: 80% !important;
+}
+
+select {
+    font-size: 12px !important;
+}
+
+
+/*菜单*/
+
+.main-nav>center {
+    text-align: left !important;
+    margin-left: 40px;
+}

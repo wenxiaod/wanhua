@@ -1,0 +1,979 @@
+var sideMenuData = [{
+    "NodeId": "DFZ20193618375564",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "A管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183651346",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "B2管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183628948",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "B3管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183658968",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "B管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ20193618371884",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "C1管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183711862",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "C2管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33778",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "D1\\47-风速",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33777",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "D1\\47-风向",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183737845",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "D1管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183748488",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "D2管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183621147",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "D3管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33779",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT101-S1\\83-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33682",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT102-S1\\82-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33683",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT103-S1\\70-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33684",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT104-S1\\56-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33781",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT105-S1\\47-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33782",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT106-S1\\47-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33783",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT107-S1\\31-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33784",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT108-S1\\17-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33788",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT109-S1\\12-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33789",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT110-S2\\03-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33790",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT111-S2\\12-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33791",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT112-S2\\26-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33796",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT113-S2\\40-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33797",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT114-S2\\55-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33798",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT115-S2\\60-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33799",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT116-S2\\70-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33808",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT117-S2\\82-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33811",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT118-S2\\87-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33800",
+    "ParentNodeID": "DFZ201936183621147",
+    "NodeType": 2,
+    "NodeName": "GT119-D3\\02-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33813",
+    "ParentNodeID": "DFZ201936183621147",
+    "NodeType": 2,
+    "NodeName": "GT120-D3\\12-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33814",
+    "ParentNodeID": "DFZ201936183621147",
+    "NodeType": 2,
+    "NodeName": "GT121-D3\\26-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33815",
+    "ParentNodeID": "DFZ201936183621147",
+    "NodeType": 2,
+    "NodeName": "GT122-D3\\39A-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33817",
+    "ParentNodeID": "DFZ201936183628948",
+    "NodeType": 2,
+    "NodeName": "GT123-B3\\33-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33818",
+    "ParentNodeID": "DFZ201936183628948",
+    "NodeType": 2,
+    "NodeName": "GT124-B3\\19-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33819",
+    "ParentNodeID": "DFZ201936183628948",
+    "NodeType": 2,
+    "NodeName": "GT125-B3\\04-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33712",
+    "ParentNodeID": "DFZ201936183651346",
+    "NodeType": 2,
+    "NodeName": "GT126-B2\\43-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33713",
+    "ParentNodeID": "DFZ201936183651346",
+    "NodeType": 2,
+    "NodeName": "GT127-B2\\29-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33714",
+    "ParentNodeID": "DFZ201936183651346",
+    "NodeType": 2,
+    "NodeName": "GT128-B2\\19-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33717",
+    "ParentNodeID": "DFZ201936183651346",
+    "NodeType": 2,
+    "NodeName": "GT129-B2\\03-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33718",
+    "ParentNodeID": "DFZ201936183651346",
+    "NodeType": 2,
+    "NodeName": "GT130-B2\\02-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33719",
+    "ParentNodeID": "DFZ201936183658968",
+    "NodeType": 2,
+    "NodeName": "GT131-B-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33720",
+    "ParentNodeID": "DFZ201936183658968",
+    "NodeType": 2,
+    "NodeName": "GT132-B\\28-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33724",
+    "ParentNodeID": "DFZ20193618375564",
+    "NodeType": 2,
+    "NodeName": "GT133-A\\28-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33725",
+    "ParentNodeID": "DFZ20193618375564",
+    "NodeType": 2,
+    "NodeName": "GT134-A\\14-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33726",
+    "ParentNodeID": "DFZ20193618375564",
+    "NodeType": 2,
+    "NodeName": "GT135-A\\87-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33728",
+    "ParentNodeID": "DFZ20193618375564",
+    "NodeType": 2,
+    "NodeName": "GT136-A\\71-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33729",
+    "ParentNodeID": "DFZ20193618375564",
+    "NodeType": 2,
+    "NodeName": "GT137-A\\61-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33792",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT138-C2\\72-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33793",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT139-C2\\73-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33823",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT140-C2\\65-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33824",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT141-C2\\52-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33825",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT142-C2\\50-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33829",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT143-C2\\36-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33830",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT144-C2\\23-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33831",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT145-C2\\22-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33731",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT146-C2\\13-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33732",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT147-C2\\05-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33733",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT148-C2\\04-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33734",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT149-C2\\03-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33735",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT150-C2\\02-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33736",
+    "ParentNodeID": "DFZ20193618371884",
+    "NodeType": 2,
+    "NodeName": "GT151-C1\\90-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33741",
+    "ParentNodeID": "DFZ20193618371884",
+    "NodeType": 2,
+    "NodeName": "GT152-C1\\75-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33745",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT153-P1\\45-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33746",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT154-P1\\31-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33747",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT155-P1\\16-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33721",
+    "ParentNodeID": "DFZ201936183651346",
+    "NodeType": 2,
+    "NodeName": "GT156-B2\\56-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33771",
+    "ParentNodeID": "DFZ201936183743145",
+    "NodeType": 2,
+    "NodeName": "GT157-Q1\\19-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33774",
+    "ParentNodeID": "DFZ201936183743145",
+    "NodeType": 2,
+    "NodeName": "GT158-Q1\\52-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "44722",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT159-D1/1#雨水-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "44721",
+    "ParentNodeID": "DFZ20193618375564",
+    "NodeType": 2,
+    "NodeName": "GT160-A/1#雨水-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "44723",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT161-P1/2#雨水-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "44720",
+    "ParentNodeID": "DFZ20193618375564",
+    "NodeType": 2,
+    "NodeName": "GT162-A/2#雨水-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "44718",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT163-S2/3#雨水-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "44716",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT164-S1/3#雨水-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "44719",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT165-C3/4#雨水-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "44717",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT166-S1/4#雨水-甲烷",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33801",
+    "ParentNodeID": "DFZ201936183748488",
+    "NodeType": 2,
+    "NodeName": "GT301-D2\\80-氢气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33838",
+    "ParentNodeID": "DFZ201936183748488",
+    "NodeType": 2,
+    "NodeName": "GT302-D2\\64-氢气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33839",
+    "ParentNodeID": "DFZ201936183748488",
+    "NodeType": 2,
+    "NodeName": "GT303-D2\\59-氢气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33836",
+    "ParentNodeID": "DFZ201936183748488",
+    "NodeType": 2,
+    "NodeName": "GT304-D2\\27-氢气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33775",
+    "ParentNodeID": "DFZ201936183748488",
+    "NodeType": 2,
+    "NodeName": "GT305-D2\\03-氢气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33762",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT306-D1\\47-氢气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33772",
+    "ParentNodeID": "DFZ201936183743145",
+    "NodeType": 2,
+    "NodeName": "GT307-Q1\\21-氢气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33685",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT401-S1\\70-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33785",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT402-S1\\31-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33794",
+    "ParentNodeID": "DFZ2018112795150756",
+    "NodeType": 2,
+    "NodeName": "GT403-S1\\02-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33826",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT404-C2\\51-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33832",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT405-C2\\25-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33737",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT406-C2\\02-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33742",
+    "ParentNodeID": "DFZ20193618371884",
+    "NodeType": 2,
+    "NodeName": "GT407-C1\\74-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33751",
+    "ParentNodeID": "DFZ20193618371884",
+    "NodeType": 2,
+    "NodeName": "GT408-C1\\32-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33753",
+    "ParentNodeID": "DFZ20193618371884",
+    "NodeType": 2,
+    "NodeName": "GT409-C1\\02-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33754",
+    "ParentNodeID": "DFZ201936183731847",
+    "NodeType": 2,
+    "NodeName": "GT410-N1\\21-LPG",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33763",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT501-P1\\95-一氧化碳",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33764",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT502-D1\\36-一氧化碳",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33722",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT601-P1\\01-氯气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33748",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT602-P1\\45-氯气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33765",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT603-P1\\95-氯气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33766",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT604-P1\\95-氯气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33767",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT605-P1\\95-氯气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33738",
+    "ParentNodeID": "DFZ20193618371884",
+    "NodeType": 2,
+    "NodeName": "GT606-C1\\90-氯气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33833",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT607-C2\\21-氯气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33827",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT608-C2\\53-氯气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33768",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT701-P1\\82-光气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33769",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT702-D1\\36-光气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33756",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT703-D1\\18-光气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33757",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT704-D1\\18-光气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33758",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT705-D1\\17-光气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33759",
+    "ParentNodeID": "DFZ201936183737845",
+    "NodeType": 2,
+    "NodeName": "GT706-D1\\17-光气",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33715",
+    "ParentNodeID": "DFZ201936183651346",
+    "NodeType": 2,
+    "NodeName": "GT801-B2\\19-硫化氢",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33749",
+    "ParentNodeID": "DFZ201936183725128",
+    "NodeType": 2,
+    "NodeName": "GT802-P1\\30-硫化氢",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33743",
+    "ParentNodeID": "DFZ20193618371884",
+    "NodeType": 2,
+    "NodeName": "GT803-C1\\45-硫化氢",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33739",
+    "ParentNodeID": "DFZ201936183711862",
+    "NodeType": 2,
+    "NodeName": "GT804-C2\\07-硫化氢",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33834",
+    "ParentNodeID": "DFZ201936183644429",
+    "NodeType": 2,
+    "NodeName": "GT805-R1\\12-硫化氢",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33821",
+    "ParentNodeID": "DFZ201936183644429",
+    "NodeType": 2,
+    "NodeName": "GT806-R1\\36-硫化氢",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33803",
+    "ParentNodeID": "DFZ20193618361151",
+    "NodeType": 2,
+    "NodeName": "GT901-S2\\55-丙酮",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33804",
+    "ParentNodeID": "DFZ201936183621147",
+    "NodeType": 2,
+    "NodeName": "GTX01-D3\\02-四氢呋喃",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183731847",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "N1管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183725128",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "P1管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33862",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "Q1\\08-风速",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33861",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "Q1\\08-风向",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183743145",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "Q1管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ201936183644429",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "R1管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ2018112795150756",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "S1管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ20193618361151",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "S2管线区",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33860",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "采购楼-风速",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33858",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "采购楼-风向",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33853",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "厂前区-风速",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33852",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "厂前区-风向",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "DFZ2019115102748188",
+    "ParentNodeID": null,
+    "NodeType": 1,
+    "NodeName": "风速风向监测点",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33857",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "氯碱楼-风速",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33856",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "氯碱楼-风向",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33849",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "设备楼-风速",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33848",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "设备楼-风向",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33851",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "石化质检-风速",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33850",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "石化质检-风向",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33855",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "转运楼-风速",
+    "Status": "0",
+    "MonitorType": null
+}, {
+    "NodeId": "33854",
+    "ParentNodeID": "DFZ2019115102748188",
+    "NodeType": 2,
+    "NodeName": "转运楼-风向",
+    "Status": "0",
+    "MonitorType": null
+}] || [];
+sideMenuData.unshift({
+    NodeId: 'all',
+    ParentNodeID: null,
+    NodeName: '全部站点'
+});
