@@ -1,0 +1,156 @@
+.bg-base {
+    background: #0c68a7!important;
+}
+
+.bg-base-2 {
+    background: #cee1ed;
+}
+
+.col-base,
+.roll-nav>a:hover,
+.nav-tabs>li.active a,
+.right-tabs .tab-content li:hover {
+    color: #0c68a7!important;
+}
+
+.btn-info,
+.btn-primary,
+.layui-layer-btn .layui-layer-btn0 {
+    background-color: #0c68a7;
+    border-color: #0c68a7;
+}
+
+.logo,
+.vertical .nav-tabs>li.active,
+input[type="checkbox"].ios-switch:checked+div,
+.horizontal .nav-tabs>li.active {
+    background-color: #0c68a7;
+}
+
+.right-tabs #tab-1 li:hover button {
+    border: 1px solid #0c68a7;
+    background: #0c68a7!important;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+    border-bottom: 4px solid #0c68a7;
+}
+
+.J_tabHelp .dropdown-menu .left li:hover,
+.J_tabHelp .dropdown-menu .left li:hover a,
+.nav-tabs>li a:focus {
+    color: #0c68a7;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary,
+.btn-primary[disabled] {
+    background-color: #0c68a7;
+    border-color: #0c68a7
+}
+
+.nav-tabs>li.active {
+    border-bottom-color: #0c68a7;
+}
+
+
+/*.order-analysis{
+	background: #0c68a7;
+}
+.users-analysis{
+	background: #7ac0d4;
+}
+.event-analysis{
+	background: #3fb370;
+}*/
+
+.form-control:focus,
+.form-control.dropdown:active,
+.has-error .form-control:focus,
+.border-base,
+table select:focus {
+    border-color: #0c68a7!important;
+    box-shadow: none!important;
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(44, 166, 249,.6)!important;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(44, 166, 249,.6)!important*/
+}
+
+.iradio_square.checked,
+input[type=radio]:checked:after {
+    background: #0c68a7;
+    border: 1px solid #0c68a7;
+}
+
+.icheckbox_square.checked,
+input[type=checkbox]:checked:after
+/*,input[type=checkbox]:focus:after*/
+
+{
+    border: 1px solid #0c68a7;
+    background: url(icon.png) center center no-repeat;
+}
+
+.icon-success {
+    background: url(icon-success.png) center center no-repeat;
+}
+
+.datetimepicker table tr td.active,
+.datetimepicker table tr td.active:hover,
+.datetimepicker table tr td.active.disabled,
+.datetimepicker table tr td.active.disabled:hover {
+    background-color: #0c68a7!important;
+}
+
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.disabled:hover.active {
+    background-color: #0c68a7!important;
+}
+
+.datetimepicker table tr td span.active:active,
+.datetimepicker table tr td span.active:hover:active,
+.datetimepicker table tr td span.active.disabled:active,
+.datetimepicker table tr td span.active.disabled:hover:active,
+.datetimepicker table tr td span.active.active,
+.datetimepicker table tr td span.active:hover.active,
+.datetimepicker table tr td span.active.disabled.active,
+.datetimepicker table tr td span.active.disabled:hover.active {
+    background-color: #0c68a7!important;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: #0c68a7;
+    border-color: #0c68a7;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #0c68a7;
+}
+
+.btn-group.open .dropdown-toggle,
+.btn-group .dropdown-toggle:hover,
+.btn-group .dropdown-toggle:focus,
+.btn-group .dropdown-toggle:active {
+    border: 1px solid #0c68a7;
+}

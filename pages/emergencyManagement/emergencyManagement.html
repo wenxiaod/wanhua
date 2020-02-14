@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+
+<html lang="ch" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>数字管廊综合管理系统</title>
+    <link type="image/x-icon" rel="Icon" href="./images/favicon.ico" />
+    <!--公共css样式-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <!--图片上传-->
+    <link rel="stylesheet" href="/css/webuploader.css" />
+    <!--公共css样式-->
+    <link href="./css/style2.css" rel="stylesheet" />
+    <!--换肤css样式-->
+    <link rel="stylesheet" type="text/css" id="cssfile" href="./css/style.css" />
+    <!--下拉菜单样式-->
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css" />
+    <!--日期控件样式-->
+    <link rel="stylesheet" href="./css/bootstrap-datetimepicker.min.css" />
+    <!--表格样式-->
+    <link rel="stylesheet" href="./css/bootstrap-table.min.css" />
+    <!--树形结构-->
+    <link href="/css/zTreeStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css">
+
+
+
+
+
+    <!--公共JS引用-->
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <!--实现弹窗拖拽-->
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!--jq.cookie-->
+    <script src="./js/jquery.cookie.js"></script>
+    <!--下拉菜单-->
+    <script src="./js/bootstrap-select.js"></script>
+    <!--表格-->
+    <script type="text/javascript" src="./js/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-table-zh-CN.min.js"></script>
+    <!--日期控件-->
+    <script type="text/javascript" src="./js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!--关于饼图柱状图-->
+    <script type="text/javascript" src="./js/echarts.min.js"></script>
+    <!--文本编辑器-->
+
+
+    <!--树形结构-->
+    <script src="./js/jquery.ztree.core.min.js"></script>
+    <!--layer弹出框-->
+    <script src="./js/layer.js"></script>
+    <script src="./js/layerExt.js"></script>
+    <!--公共js-->
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script src="./js/Print.js?v=20180121"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/index.js"></script>
+
+
+
+</head>
+
+<body style="overflow:-Scroll;overflow:hidden;">
+    <div id="container" style="min-height:613px;min-width:1024px">
+        <!--头部-->
+        <div class="nav" id="nav" style="width: 100%;">
+            <div style="width:400px;position:relative;line-height: 60px;float:left">
+                <img id="imghead" src="./images/LOGO.png" style="width:195px;position:absolute;left:0;top:10px" alt="logo">
+                <img class="XiTongNameBg" src="./images/XiTongNameBg.png" alt="Alternate Text" />
+                <span class="XiTongName">应急管理系统</span>
+            </div>
+            <div style="flex-grow:1;line-height: 60px;color: white;font-size:18px;float:right">
+                <div style="">
+                    <div></div>
+                    <div class="header-right-menu" style="width:300px;">
+                        <!-- 登录-->
+                        <div id="Wel" class="showXinxiBox " style="height:60px;position: relative;float:left">
+                            <div class="huanYinDiv" style="padding-right:6px;overflow: hidden;white-space:nowrap;text-overflow: ellipsis;line-height: 60px;">
+                                <img src="./images/head.png" alt="">
+                                <span class="fts-14">张一鸣</span>
+                                <!--小三角-->
+                                <span class="arrow-down"></span>
+                            </div>
+                            <div class="xinXiBox">
+
+                                <img src="./images/fscroll.png" />
+                                <a id="fullscreen" isscreen="0">全屏显示</a>
+
+
+                            </div>
+                        </div>
+                        <!--应用中心-->
+                        <div id="Use" class="applition m-l-10" style="width: 100px; overflow: hidden; height: 60px; font-size: 14px; float: left">
+                            <a href="../../pages/home.html"><img src="./images/appliction.png" alt="应用中心"></a>
+                            <span>应用中心</span>
+                        </div>
+                        <!--消息-->
+
+                        <!--消息数量-->
+
+                        <!--退出按钮-->
+                        <div class="m-l-10" style=" width: 72px; overflow: hidden; height: 60px; font-size: 16px; float: left;">
+                            <div class="outBtn">
+                                <img src="./images/off.png" alt="退出系统">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--下部-->
+        <div class="downBox" style="position:absolute;top:60px;left:0;bottom:0;width:100%">
+            <div style="margin: 0;width: 100%;height: 100%;position:relative">
+                <div style="width: 175px; height: 100%; float: left; position: relative; background-color: #e8ebf2;">
+                    <div id="menuLeft" style="width: 175px; position: relative; height: 93%; overflow: auto;margin-top:5px;">
+                        <ul class="show">
+                            <li class="varied">
+                                <div class="menuHover visibili">
+                                    <div></div>
+                                </div>
+                                <div class="fatherBox"><i class="fa fa-file-text" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">基础资料</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                                <div class="childBox hide">
+                                    <div class="childDivList" style="letter-spacing:1px">应急人员</div>
+                                    <div class="childDivList" style="letter-spacing:1px">危险源</div>
+                                    <div class="childDivList" style="letter-spacing:1px">应急物资</div>
+                                    <div class="childDivList" style="letter-spacing:1px">数据字典</div>
+                                </div>
+                            </li>
+                            <li class="varied">
+                                <div class="menuHover">
+                                    <div></div>
+                                </div>
+                                <div class="fatherBox"><i class="fa fa-recycle" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">应急流程</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                                <div class="childBox hide">
+                                    <div class="childDivList" style="letter-spacing:1px">流程编制</div>
+                                </div>
+                            </li>
+                            <li class="varied">
+                                <div class="menuHover visibili">
+                                    <div></div>
+                                </div>
+                                <div class="fatherBox"><i class="fa fa-gg-circle" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">应急预案</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                                <div class="childBox hide">
+                                    <div class="childDivList" style="letter-spacing:1px">预案编制</div>
+                                    <div class="childDivList" style="letter-spacing:1px">预案发布</div>
+                                    <div class="childDivList" style="letter-spacing:1px">预案库</div>
+                                </div>
+                            </li>
+                            <li class="varied">
+                                <div class="menuHover visibili">
+                                    <div></div>
+                                </div>
+                                <div class="fatherBox"><i class="fa fa-codepen" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">应急事件</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                                <div class="childBox hide">
+                                    <div class="childDivList" style="letter-spacing:1px">报警预警</div>
+                                    <div class="childDivList" style="letter-spacing:1px">事件管理</div>
+                                    <div class="childDivList" style="letter-spacing:1px">处置总结</div>
+                                </div>
+                            </li>
+                            <li class="varied">
+                                <div class="menuHover visibili">
+                                    <div></div>
+                                </div>
+                                <div class="fatherBox"><i class="fa fa-arrow-right" style="color: rgb(37, 37, 37);"></i><samp class="p-l-10 ZiTiSize" style="color: rgb(37, 37, 37);">信息通知发布</samp><img class="jiantou" src="./images/jiantou1.png"></div>
+                                <div class="childBox hide">
+                                    <div class="childDivList" style="letter-spacing:1px">应急调度信息发布</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="character" style="height:10px">
+                        <div style="width:175px;margin-bottom:3px"></div>
+                    </div>
+                </div>
+                <!--中间内容盒子-->
+                <div id="Right-box" style="height: 100%;position:absolute;left:175px;right:0">
+                    <iframe src="./pages/content.html" name="boxiframe" id="boxiframe" scrolling="no" style="border: none;width:100%;height:100%"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal inmodal pwd-modal fade" id="pwd-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog wid-400">
+            <div class="modal-content bg-white-0">
+                <div class="modal-header bg-base color-white">
+                    <button type="button" class="close color-white" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h5 class="modal-title">修改密码</h5>
+                </div>
+                <div class="modal-body fts-15 unified text-center bg-white p-t-25">
+                    <form class="form-horizontal fts-12" role="form">
+                        <div class="form-group">
+                            <label for="old-pwd"><em class="color-red">* </em><span>原密码：</span></label>
+                            <input type="password" class="form-control wid-250" id="old-pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-pwd"><em class="color-red">* </em><span>新密码：</span></label>
+                            <input type="password" class="form-control wid-250" id="new-pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="q-pwd"><em class="color-red">* </em><span>确认密码：</span></label>
+                            <input type="password" class="form-control wid-250" id="q-pwd">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center bg-white">
+                    <button type="button" class="btn btn-primary btn-rad-4 fts-12" id="btnChangePassWord">确定</button>
+                    <button type="button" class="btn btn-default btn-rad-4 fts-12" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="succeedInfo"></div>
+    <div class="errorInfo"></div>
+
+    <script src="./js/yanue.pop.js"></script>
+    <div id="pop" style="display:none;">
+        <div id="popHead">
+            <a id="popClose" title="关闭">关闭</a>
+            <input type="checkbox" id="check" title="本次不再提醒" />
+            <h2>报警提醒</h2>
+        </div>
+        <div id="popContent">
+            <dl>
+                <dt id="popTitle"><a href="javascript:void(0)" target="boxiframe"></a></dt>
+                <dd id="popIntro"></dd>
+            </dl>
+            <p id="popMore"><a href="javascript:void(0)" target="boxiframe">查看全部 »</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

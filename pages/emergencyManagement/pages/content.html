@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <!--公共css样式-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!--图片上传-->
+    <link rel="stylesheet" href="../css/webuploader.css" />
+    <!--公共css样式-->
+    <link href="../css/style2.css" rel="stylesheet" />
+    <!--换肤css样式-->
+    <link rel="stylesheet" type="text/css" id="cssfile" href="../css/style.css" />
+    <!--下拉菜单样式-->
+    <link rel="stylesheet" href="../css/bootstrap-select.min.css" />
+    <!--日期控件样式-->
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+    <!--表格样式-->
+    <link rel="stylesheet" href="../css/bootstrap-table.min.css" />
+    <!--树形结构-->
+    <link href="../css/zTreeStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/content.css">
+    <link href="./css/viewer.min.css" rel="stylesheet" />
+
+    <!--公共JS引用-->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <!--实现弹窗拖拽-->
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!--jq.cookie-->
+    <script src="../js/jquery.cookie.js"></script>
+    <!--换肤-->
+    <script type="text/javascript" src="./js/skin.js"></script>
+    <!--下拉菜单-->
+    <script src="../js/bootstrap-select.js"></script>
+    <!--表格-->
+    <script type="text/javascript" src="../js/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-table-zh-CN.min.js"></script>
+    <!--日期控件-->
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!--关于饼图柱状图-->
+    <script type="text/javascript" src="../js/echarts.min.js"></script>
+    <!--树形结构-->
+    <script src="../js/jquery.ztree.core.min.js"></script>
+    <!--layer弹出框-->
+    <script src="../js/layer.js"></script>
+    <script src="../js/layerExt.js"></script>
+    <!--公共js-->
+    <script type="text/javascript" src="./js/ZsyUI.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script src="../js/Print.js"></script>
+    <script src="../js/loading.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/Tool.js"></script>
+
+    <script src="./js/jquery.lazyload.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="Supplier unified fts-12 bg-white wrap">
+            <div class="content p-t-none">
+                <form class="form-inline" role="form" id="form">
+                    <div class="top_op">
+                        <div class="search p-t-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control wid-200" id="Conditions" placeholder="请输入名称、编码搜索" title="请输入名称、编码搜索" data-title="搜索条件">
+                                <label class="wid-0"><span>上报时间:</span></label>
+                                <input type="text" id="start" name="name" class="form-control  wid-150 form_datetime" valitimeformat="true" data-title="上报开始时间" />-<input type="text" id="end" name="name" class="form-control  wid-150 form_datetime" data-title="上报截止时间"
+                                />
+                            </div>
+                            <div class="form-group" style="display:none !important">
+                                <label class="wid-0"><span>所属公司：</span></label>
+                                <select id="Company" name="Company" class="selectpicker form-control wid-200" data-size="10" title="请选择"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="wid-0"><span>是否关闭：</span></label>
+                                <input type="checkbox" name="name" id="wornstate" value="0" />
+                            </div>
+                            <input class="btn btn-primary fts-12 m-l-10" type="button" value="查询" id="query" onclick="Query()" />
+                        </div>
+
+                    </div>
+                    <div class=" text-center resize-table table-content table-responsive">
+                        <table id="table" class="table-hover" data-height="100%"></table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/wincommon.js"></script>
+    <script src="./js/viewer.min.js"></script>
+    <script src="./js/content.js"></script>
+
+</body>
+
+</html>
